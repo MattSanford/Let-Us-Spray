@@ -1,0 +1,118 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@font-face {
+	font-family: base-font;
+	src: url('/anna/anna.ttf');
+	font-weight: 200;
+}
+
+
+#container {
+	height: 100%;
+	font-family: base-font, sans-serif;
+	width: 100%;
+}
+
+header {
+background: rgb(2,181,241);
+background: -moz-linear-gradient(top,  rgba(2,181,241,1) 0%, rgba(71,197,239,1) 50%, rgba(122,210,239,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,181,241,1)), color-stop(50%,rgba(71,197,239,1)), color-stop(100%,rgba(122,210,239,1)));
+background: -webkit-linear-gradient(top,  rgba(2,181,241,1) 0%,rgba(71,197,239,1) 50%,rgba(122,210,239,1) 100%);
+background: -o-linear-gradient(top,  rgba(2,181,241,1) 0%,rgba(71,197,239,1) 50%,rgba(122,210,239,1) 100%);
+background: -ms-linear-gradient(top,  rgba(2,181,241,1) 0%,rgba(71,197,239,1) 50%,rgba(122,210,239,1) 100%);
+background: linear-gradient(to bottom,  rgba(2,181,241,1) 0%,rgba(71,197,239,1) 50%,rgba(122,210,239,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', endColorstr='#7ad2ef',GradientType=0 );
+
+	margin: 0 auto;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+
+	nav {
+			float: right;
+			margin: 1em 1em;
+
+		a {
+			font-size: 3em;
+			margin: 0 25px;
+			text-decoration: none;
+		}
+
+	}
+	img {
+		height: 150px;
+		margin: 10px;
+	}
+
+}
+
+#main {
+background: rgb(2,42,87);
+background: -moz-linear-gradient(top,  rgba(2,42,87,1) 0%, rgba(24,54,86,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,42,87,1)), color-stop(100%,rgba(24,54,86,1)));
+background: -webkit-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
+background: -o-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
+background: -ms-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
+background: linear-gradient(to bottom,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', endColorstr='#183656',GradientType=0 );
+	padding: 10px;
+	margin-top: 175px;
+	width: 100%;
+
+
+	.content {
+		width: 55.55555%;
+	}
+}
+
+.content {
+	margin: 0 2em;
+	padding: 15px;
+	font-size: 1.5em;
+	line-height: 25px;
+	float: left;
+	border-radius: 10px;
+}
+
+.team {
+	float: left;
+	width: 33.33333%;
+}
+.content, .team-member.content {
+	background: white;
+}
+
+aside.team-member {
+	width: auto !important;
+}
+
+.team-member {
+	padding: 10px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 1.25em; 
+	margin-bottom: 15px;
+
+	img {
+		height: 150px;
+		width: 150px;
+		border-radius: 150px;
+		border: 1px solid black;
+		float: left;
+		margin: 0 10px 0 0;
+	}
+}
+
+.clear-fix {
+	clear: both;
+}
+
+
+
+
+

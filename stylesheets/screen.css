@@ -1,0 +1,181 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../Downloads/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: base-font;
+  src: url("/anna/anna.ttf");
+  font-weight: 200;
+}
+
+/* line 15, ../sass/screen.scss */
+#container {
+  height: 100%;
+  font-family: base-font, sans-serif;
+  width: 100%;
+}
+
+/* line 21, ../sass/screen.scss */
+header {
+  background: #02b5f1;
+  background: -moz-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #02b5f1), color-stop(50%, #47c5ef), color-stop(100%, #7ad2ef));
+  background: -webkit-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
+  background: -o-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
+  background: -ms-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
+  background: linear-gradient(to bottom, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02b5f1', endColorstr='#7ad2ef',GradientType=0 );
+  margin: 0 auto;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+/* line 36, ../sass/screen.scss */
+header nav {
+  float: right;
+  margin: 1em 1em;
+}
+/* line 40, ../sass/screen.scss */
+header nav a {
+  font-size: 3em;
+  margin: 0 25px;
+  text-decoration: none;
+}
+/* line 47, ../sass/screen.scss */
+header img {
+  height: 150px;
+  margin: 10px;
+}
+
+/* line 54, ../sass/screen.scss */
+#main {
+  background: #022a57;
+  background: -moz-linear-gradient(top, #022a57 0%, #183656 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #022a57), color-stop(100%, #183656));
+  background: -webkit-linear-gradient(top, #022a57 0%, #183656 100%);
+  background: -o-linear-gradient(top, #022a57 0%, #183656 100%);
+  background: -ms-linear-gradient(top, #022a57 0%, #183656 100%);
+  background: linear-gradient(to bottom, #022a57 0%, #183656 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#022a57', endColorstr='#183656',GradientType=0 );
+  padding: 10px;
+  margin-top: 175px;
+  width: 100%;
+}
+/* line 68, ../sass/screen.scss */
+#main .content {
+  width: 55.55555%;
+}
+
+/* line 73, ../sass/screen.scss */
+.content {
+  margin: 0 2em;
+  padding: 15px;
+  font-size: 1.5em;
+  line-height: 25px;
+  float: left;
+  border-radius: 10px;
+}
+
+/* line 82, ../sass/screen.scss */
+.team {
+  float: left;
+  width: 33.33333%;
+}
+
+/* line 86, ../sass/screen.scss */
+.content, .team-member.content {
+  background: white;
+}
+
+/* line 90, ../sass/screen.scss */
+aside.team-member {
+  width: auto !important;
+}
+
+/* line 94, ../sass/screen.scss */
+.team-member {
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 1.25em;
+  margin-bottom: 15px;
+}
+/* line 101, ../sass/screen.scss */
+.team-member img {
+  height: 150px;
+  width: 150px;
+  border-radius: 150px;
+  border: 1px solid black;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+/* line 111, ../sass/screen.scss */
+.clear-fix {
+  clear: both;
+}
