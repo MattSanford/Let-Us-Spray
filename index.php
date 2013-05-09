@@ -40,7 +40,7 @@
 						<h2>Your Non-Pressure Roof Cleaning Specialists</h2>
 						<div class="icon-side">
 							<span class="iconic house"></span>
-							<h1>X 50,000</h1
+							<h1>X 10,000</h1
 								>
 						</div>
 						<div class="text-side">
@@ -50,15 +50,29 @@
 					</div>
 					<div id="century21">
 						<h2 id="century21">SoftWashing - 21<sup>st</sup> Century <em>Technology</em></h2>
-						<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
-						<p>The power of chemistry is what makes our Soft-wash process so effective. Different surfaces and different contaminants require different levels of "soft washing". With each cleaning job we perform, our cleaning solution is custom mixed on site and applied. We do not have a "one size fits all" approach to cleaning. We will customize a cleaning plan to maximize effectiveness while also keeping your cost as low as possible!</p>
+						<div class="text-side">
+							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
+						<div class="icon-side">
+							<h1>$$$</h1>
+							<span class="iconic arrow-d"></span>
+							<h1>$</h1>		
+						</div>						
+							<p>The power of chemistry is what makes our Soft-wash process so effective. Different surfaces and different contaminants require different levels of "soft washing". With each cleaning job we perform, our cleaning solution is custom mixed on site and applied. We do not have a "one size fits all" approach to cleaning. We will customize a cleaning plan to maximize effectiveness while also keeping your cost as low as possible!</p>
+						</div>
+
+							<div class="clear-fix"></div>		
 					</div>
 					<div class="about">
 						<h2 id="about">About Us</h2>
 						<p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
 						<p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
 						<p>We follow all industry accepted non-pressure/soft washing standards and recommended procedures by SoftWash Systems, ARMA (Asphalt Roof Manufacturers Association), and RCIA (Roof Cleaning Institute of America). Our specially blended cleaning solutions are biodegradable and exclusive to SoftWash Systems.</p>
+						<div class="icon-side bb">
+							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><img id="bb" src="/images/logos/better-business-logo-official.jpg"></a>
+						</div>	
 						<p>Providing for both residential and light commercial clients, we are fully insured, licensed, rated A+ with the Richmond BBB, and a Certified Member of SoftWash Systems.</p>
+						<div class="clear-fix"></div>		
+					
 					</div>
 					<div class="technology">
 						<h2 id="technology">The Unique Soft Wash System</h2>
@@ -87,11 +101,14 @@
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 					</div>
 				</section>
+				<div class="mailform">
+					<h1>Contact Us!</h1>
+					<?php include('contact.php'); ?>
+				</div>
 				<div class="clear-fix"></div>
 			</div>
 		</div>
 				<div id="facebook"></div>
 	</div>
-
 </body>
 </html>

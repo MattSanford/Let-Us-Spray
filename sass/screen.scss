@@ -176,8 +176,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 
 	h1 {
 		text-transform: capitalize;
-		margin: 1% 3%;
+		font-size: 3em;
+		margin-bottom: 35px;
 	}
+
+	&:nth-child(2) {
+		margin: 0 25px;
+		}
+}
+.bb {
+	margin: 0 2%;
+}
+#bb {
+	height: 150px;
+	border-radius: 10px;
 }
 
 /*==========Icons==========*/
@@ -189,7 +201,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 		content: '\2302 \2302 \2302 \2302 \2302';
 }
 
+.arrow-d:after {
+	content: '\2193';
+	margin-left: 15px;
 
+}
 .text-side {
 }
 
@@ -252,6 +268,56 @@ aside.team-member {
 		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		#{$webkit}box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 		#{$moz}box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	}
+}
+
+.mailform {
+	background: url('/images/skewed_print.png');
+	padding: 0 5%;
+	p, h1 {
+		color: #00b9f3;
+		text-align: left !important;
+	}
+
+	input, textarea {
+		border-radius: 5px;
+	}
+
+	p:last-child {
+		margin: 5px 0 0;
+	}
+
+	textarea {
+		height: 100px;
+		width: 400px;
+		resize: none;
+		display: block;
+	}
+
+	table {
+		width: 100%;
+
+		td {
+			padding: 0 15px ;
+			width: 33.33333%;
+
+		}
+	}
+
+	.send-button {
+		font-size: 2em;
+		color: #00b9f3;
+		background: white;
+		font-family: 'Raleway';
+		padding: 10px;
+		margin-top: 15px;
+		border: none;
+		border-radius: 5px;
+
+		&:hover {
+			background: #00b9f3;
+			color: white;
+		}
 	}
 }
 
