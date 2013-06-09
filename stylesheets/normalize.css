@@ -315,7 +315,7 @@ ul {
 
 nav ul,
 nav ol {
-    list-style: none;
+    list-style-type: decimal;
     list-style-image: none;
 }
 

@@ -3,8 +3,10 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-
+@import "compass/reset/utilities";
+@mixin reset-list-style {
+  list-style: decimal;
+}
 @font-face { 
 	font-family: 'IconicStroke'; 
 	src: url('/iconic stroke/iconic_stroke.eot');
@@ -28,11 +30,17 @@ p {
 	line-height: 35px;
 }
 
+li {
+	font-size: 24px;
+	margin: 5px 20px;
+}
+
 
 #container {
 	height: 100%;
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
+	@include reset-list-style;
 }
 
 header {
@@ -54,60 +62,68 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', end
 	.header-in {
 		margin: 0 auto;
 		width: 980px;
-	
-		nav {
-			float: right;
-			margin: .5em ;
-
-			a {
-				font-size: 2em;
-				margin: 0 10px;
-				text-decoration: none;
-			}
-		}
 
 		img {
-			height: 150px;
-			margin: 10px 0 0 0;
+			margin: 0 auto;
+			display: block;
+			-webkit-animation: slideup .2s;
+
+			&:hover {
+				margin-top: 5px;
+				-webkit-animation: slidedown1 .2s;
+			}
 		}
 
 	}
 
 }
-			#facebook {
-			height: 72px;
-			width: 72px;
-			border-radius: 7px;
-			position: fixed; 
-			top: 75px;
-			margin-left: 25px;
-			background: url('/images/fb_72.png');
-			-webkit-animation: slideup .2s;
+			.appear {
+			float: right;
+			margin-right: 100px;
 
 			&:hover {
-				top: 100px;
 				-webkit-animation: slidedown .2s;
 			}
 		}
 
-		@-webkit-keyframes slideup {
-			from {
-				top: 100px;
-			}
-			to {
-				top: 75px;
-			}
-		}
-
-
 		@-webkit-keyframes slidedown {
 			from {
-				top: 75px;
+				margin-top: 0px;
+			}
+			25% {
+				margin-top: 5px;
+			}
+			50% {
+				margin-top: 0px;
+			}
+			75% {
+				margin-top: 5px;
 			}
 			to {
-				top: 100px;
+				margin-top: 0px;
 			}
 		}
+
+		@webkit-keyframes slideup {
+			from {
+				margin-top: 5px;
+			}
+
+			to {
+				margin-top: 0px;
+			}
+		}
+
+		@-webkit-keyframes slidedown1 {
+			from {
+				margin-top: 0;
+			}
+
+			to {
+				margin-top: 5px;
+			}
+		}
+
 
 #main {
 background: rgb(2,42,87);
@@ -130,7 +146,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 		text-align: center;
 	}
 
-	h2 {
+	.bg-header {
 		background: url('/images/black_twill.png');
 		padding: 15px;
 		color: #00b9f3;
@@ -163,7 +179,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 	}
 	.content-wrap {
 		width: 940px;
-		margin: 10px auto;
+		margin: 10px auto 0;
+		padding: 10px 0 0;
 	}
 
 
@@ -240,6 +257,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 		}
 	}
 }
+.FAQ {
+.question {
+	font-family: sans-serif;
+	font-weight: 800;
+	margin-bottom: 0;
+}
+	p {
+		margin-top: 5px;
+	}
+}
+
+.why {
+	h1 {
+		text-transform: capitalize;
+	}
+}
 
 .team {
 	float: left;
@@ -256,13 +289,13 @@ aside.team-member {
 	
 
 	img {
-		height: 350px;
-		width: 350px;
-		border-radius: 350px;
+		height: 240px;
+		width: 240px;
+		border-radius: 255px;
 		border: 1px solid black;
 		float: left;
 		margin: 0 10px 0 0;
-		background: url('/images/mark.jpg') no-repeat;
+		background: url('/images/matt.jpg') no-repeat;
 		background-position: center;
 		background-size: 100%;
 		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
@@ -270,11 +303,33 @@ aside.team-member {
 		#{$moz}box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 }
+.mailform, #thankyou {
+	background: url('/images/px_by_Gre3g.png');
+}
+#thankyou {
+	height: 100%;
+	color: #00b9f3;
+	font-family: 'Raleway' sans-serif;
+	
+	#thanks-text {
+		padding-top: 75px;
+		text-align: center;
+		h1{
+			margin: 0;
+			font-size: 5em;
+		}
+		h2{
+			font-size: 3em;
+		}
 
+		a {
+			color: white;
+		}
+	}	
+}
 .mailform {
-	background: url('/images/skewed_print.png');
 	padding: 0 5%;
-	p, h1 {
+	h1, h2 {
 		color: #00b9f3;
 		text-align: left !important;
 	}
@@ -325,6 +380,12 @@ aside.team-member {
 	clear: both;
 }
 
+footer {
+	height: 50px;
+	width: 100%;
+	margin: 0;
+	background: url('/images/black_twill.png');
+}
 
 
 

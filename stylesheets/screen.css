@@ -2,71 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-
-/* line 22, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
-}
-
-/* line 24, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, ../../../Desktop/compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 @font-face {
   font-family: 'IconicStroke';
   src: url("/iconic stroke/iconic_stroke.eot");
@@ -75,20 +10,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 p {
   font-size: 1.5em;
   line-height: 35px;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
+li {
+  font-size: 24px;
+  margin: 5px 20px;
+}
+
+/* line 39, ../sass/screen.scss */
 #container {
   height: 100%;
   font-family: "Raleway", sans-serif;
   width: 100%;
+  list-style: decimal;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 header {
   background: #02b5f1;
   background: -moz-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
@@ -105,70 +47,85 @@ header {
   width: 100%;
   z-index: 2000;
 }
-/* line 54, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 header .header-in {
   margin: 0 auto;
   width: 980px;
 }
-/* line 58, ../sass/screen.scss */
-header .header-in nav {
-  float: right;
-  margin: 0.5em;
-}
-/* line 62, ../sass/screen.scss */
-header .header-in nav a {
-  font-size: 2em;
-  margin: 0 10px;
-  text-decoration: none;
-}
-/* line 69, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 header .header-in img {
-  height: 150px;
-  margin: 10px 0 0 0;
-}
-
-/* line 77, ../sass/screen.scss */
-#facebook {
-  height: 72px;
-  width: 72px;
-  border-radius: 7px;
-  position: fixed;
-  top: 75px;
-  margin-left: 25px;
-  background: url("/images/fb_72.png");
+  margin: 0 auto;
+  display: block;
   -webkit-animation: slideup 0.2s;
 }
-/* line 87, ../sass/screen.scss */
-#facebook:hover {
-  top: 100px;
+/* line 71, ../sass/screen.scss */
+header .header-in img:hover {
+  margin-top: 5px;
+  -webkit-animation: slidedown1 0.2s;
+}
+
+/* line 80, ../sass/screen.scss */
+.appear {
+  float: right;
+  margin-right: 100px;
+}
+/* line 84, ../sass/screen.scss */
+.appear:hover {
   -webkit-animation: slidedown 0.2s;
 }
 
-@-webkit-keyframes slideup {
-  /* line 94, ../sass/screen.scss */
-  from {
-    top: 100px;
-  }
-
-  /* line 97, ../sass/screen.scss */
-  to {
-    top: 75px;
-  }
-}
-
 @-webkit-keyframes slidedown {
-  /* line 104, ../sass/screen.scss */
+  /* line 90, ../sass/screen.scss */
   from {
-    top: 75px;
+    margin-top: 0px;
   }
 
-  /* line 107, ../sass/screen.scss */
+  /* line 93, ../sass/screen.scss */
+  25% {
+    margin-top: 5px;
+  }
+
+  /* line 96, ../sass/screen.scss */
+  50% {
+    margin-top: 0px;
+  }
+
+  /* line 99, ../sass/screen.scss */
+  75% {
+    margin-top: 5px;
+  }
+
+  /* line 102, ../sass/screen.scss */
   to {
-    top: 100px;
+    margin-top: 0px;
   }
 }
 
-/* line 112, ../sass/screen.scss */
+@webkit-keyframes slideup {
+  /* line 108, ../sass/screen.scss */
+  from {
+    margin-top: 5px;
+  }
+
+  /* line 112, ../sass/screen.scss */
+  to {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes slidedown1 {
+  /* line 118, ../sass/screen.scss */
+  from {
+    margin-top: 0;
+  }
+
+  /* line 122, ../sass/screen.scss */
+  to {
+    margin-top: 5px;
+  }
+}
+
+/* line 128, ../sass/screen.scss */
 #main {
   background: #022a57;
   background: -moz-linear-gradient(top, #022a57 0%, #183656 100%);
@@ -181,152 +138,169 @@ header .header-in img {
   margin-top: 100px;
   width: 100%;
 }
-/* line 124, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 #main, #main .badges {
   moz-box-shadow: inset 0px 1px 6px black;
   -webkit-box-shadow: inset 0px 1px 6px black;
   box-shadow: inset 0px 1px 6px black;
 }
-/* line 129, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 #main h1 {
   text-align: center;
 }
-/* line 133, ../sass/screen.scss */
-#main h2 {
+/* line 149, ../sass/screen.scss */
+#main .bg-header {
   background: url("/images/black_twill.png");
   padding: 15px;
   color: #00b9f3;
 }
-/* line 141, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #main .badges {
   background: url("/images/grid.png");
   height: 200px;
   padding: 25px 10px 10px;
 }
-/* line 145, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #main .badges .badge-wrap {
   margin: 0 auto;
   width: 940px;
 }
-/* line 149, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #main .badges .badge-wrap div {
   width: 31.91489361702128%;
   height: 175px;
   border: 1px solid white;
   float: left;
 }
-/* line 156, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #main .badges .badge-wrap div:nth-child(2) {
   margin: 0 1.5%;
 }
-/* line 161, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #main .content, #main #welcome, #main .team {
   background: url("/images/pattern-8ylf.png");
 }
-/* line 164, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #main .content-wrap {
   width: 940px;
-  margin: 10px auto;
+  margin: 10px auto 0;
+  padding: 10px 0 0;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .icon-side {
   height: 200px;
   float: left;
   margin: 10% 1% 0;
 }
-/* line 177, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .icon-side h1 {
   text-transform: capitalize;
   font-size: 3em;
   margin-bottom: 35px;
 }
-/* line 183, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .icon-side:nth-child(2) {
   margin: 0 25px;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .bb {
   margin: 0 2%;
 }
 
-/* line 190, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #bb {
   height: 150px;
   border-radius: 10px;
 }
 
 /*==========Icons==========*/
-/* line 196, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .iconic {
   font-family: 'IconicStroke';
   font-size: 5em;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .house:before {
   content: '\2302 \2302 \2302 \2302 \2302';
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .arrow-d:after {
   content: '\2193';
   margin-left: 15px;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .content-wrap, header {
   moz-box-shadow: 0px 3px 6px black;
   -webkit-box-shadow: 0px 3px 6px black;
   box-shadow: 0px 3px 6px black;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 .content {
   padding: 15px 0;
   line-height: 25px;
   float: left;
   background-position: fixed;
 }
-/* line 225, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .content div p {
   padding: 10px;
 }
-/* line 233, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 .content #century21 p {
   background-color: rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.4);
 }
-/* line 238, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 .content #century21 h2 {
   text-shadow: 1px 1px 6px black;
 }
 
-/* line 244, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
+.FAQ .question {
+  font-family: sans-serif;
+  font-weight: 800;
+  margin-bottom: 0;
+}
+/* line 266, ../sass/screen.scss */
+.FAQ p {
+  margin-top: 5px;
+}
+
+/* line 272, ../sass/screen.scss */
+.why h1 {
+  text-transform: capitalize;
+}
+
+/* line 277, ../sass/screen.scss */
 .team {
   float: left;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 aside.team-member {
   width: auto !important;
 }
 
-/* line 253, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .team-member {
   padding: 10px;
   margin-bottom: 15px;
 }
-/* line 258, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .team-member img {
-  height: 350px;
-  width: 350px;
-  border-radius: 350px;
+  height: 240px;
+  width: 240px;
+  border-radius: 255px;
   border: 1px solid black;
   float: left;
   margin: 0 10px 0 0;
-  background: url("/images/mark.jpg") no-repeat;
+  background: url("/images/matt.jpg") no-repeat;
   background-position: center;
   background-size: 100%;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -334,41 +308,70 @@ aside.team-member {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-/* line 274, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
+.mailform, #thankyou {
+  background: url("/images/px_by_Gre3g.png");
+}
+
+/* line 309, ../sass/screen.scss */
+#thankyou {
+  height: 100%;
+  color: #00b9f3;
+  font-family: "Raleway" sans-serif;
+}
+/* line 314, ../sass/screen.scss */
+#thankyou #thanks-text {
+  padding-top: 75px;
+  text-align: center;
+}
+/* line 317, ../sass/screen.scss */
+#thankyou #thanks-text h1 {
+  margin: 0;
+  font-size: 5em;
+}
+/* line 321, ../sass/screen.scss */
+#thankyou #thanks-text h2 {
+  font-size: 3em;
+}
+/* line 325, ../sass/screen.scss */
+#thankyou #thanks-text a {
+  color: white;
+}
+
+/* line 330, ../sass/screen.scss */
 .mailform {
-  background: url("/images/skewed_print.png");
   padding: 0 5%;
 }
-/* line 277, ../sass/screen.scss */
-.mailform p, .mailform h1 {
+/* line 332, ../sass/screen.scss */
+.mailform h1, .mailform h2 {
   color: #00b9f3;
   text-align: left !important;
 }
-/* line 282, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .mailform input, .mailform textarea {
   border-radius: 5px;
 }
-/* line 286, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .mailform p:last-child {
   margin: 5px 0 0;
 }
-/* line 290, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 .mailform textarea {
   height: 100px;
   width: 400px;
   resize: none;
   display: block;
 }
-/* line 297, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .mailform table {
   width: 100%;
 }
-/* line 300, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .mailform table td {
   padding: 0 15px;
   width: 33.33333%;
 }
-/* line 307, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .mailform .send-button {
   font-size: 2em;
   color: #00b9f3;
@@ -379,13 +382,21 @@ aside.team-member {
   border: none;
   border-radius: 5px;
 }
-/* line 317, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .mailform .send-button:hover {
   background: #00b9f3;
   color: white;
 }
 
-/* line 324, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .clear-fix {
   clear: both;
+}
+
+/* line 383, ../sass/screen.scss */
+footer {
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  background: url("/images/black_twill.png");
 }
