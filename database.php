@@ -21,17 +21,27 @@
   $email = $_POST['email'];
   $address = $_POST['address'];
   $job = $_POST['job'];
-  $message = $_POST['message'];
+  $message = $_POST['message']; 
     echo strlen($email);
+  $email= mysqli_real_escape_string($con, $email);
 //adding values into the database.
-  $sql = "INSERT INTO $tbl_name (First Name, Last Name, Email, Address) VALUES ('$fname', '$lname', '$email', '$address')";
-  $result = mysqli_query($con, $sql); 
-    if($result){
-      echo "success";
-      }
-    else {
-      echo mysqli_error($con);
-      }
+ $sql = "INSERT INTO $tbl_name (First Name, Last Name, Email, Address) VALUES ('$fname', '$lname', '$email', '$address')";
+  $stmt = mysqli_prepare($con, $sql);
+  if ($stmt->execute()){
+    echo "27"; 
+  }
+  else {
+    
+  }
+
+
+  //$result = mysqli_query($con, $sql); 
+  //  if($result){
+  //    echo "success";
+  //    }
+  //  else {
+  //    echo mysqli_error($con);
+  //    }
 
 
 
