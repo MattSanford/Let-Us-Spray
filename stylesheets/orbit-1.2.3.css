@@ -19,6 +19,11 @@
 #featured>div,
 #featured>a { display: none; }
 
+#featured>img {
+    width: 940px;
+    height: 450px;
+
+}
 
 
 

@@ -5,11 +5,11 @@
   $username = "contactformbase";
   $dbname = "contactformbase";
   $password = "Usahockey4!!";
-  $con = mysqli_connect($hostname, $username, $password, $dbname);
+  $mysqli = new mysqli($hostname, $username, $password, $dbname);
   $tbl_name = "client_base";
 
 //Connecting to your database
-  if ($con) {
+  if ($mysqli) {
         echo 'success!...' . $con->host_info . "\n";
     }
    else {
@@ -20,40 +20,31 @@
   $lname = $_POST['last_name'];
   $email = $_POST['email'];
   $address = $_POST['address'];
-  $job = $_POST['job'];
+  $job = $_POST['job']; 
   $message = $_POST['message']; 
-    echo strlen($email);
-  $email= mysqli_real_escape_string($con, $email);
-//adding values into the database.
- $sql = "INSERT INTO $tbl_name (First Name, Last Name, Email, Address) VALUES ('$fname', '$lname', '$email', '$address')";
-  $stmt = mysqli_prepare($con, $sql);
-  if ($stmt->execute()){
-    echo "27"; 
-  }
-  else {
+  $email= $mysqli->real_escape_string($email);
+  $address = $mysqli->real_escape_string($address);
+  
+// 1. check if all fields are filled, 
+// 2. check if database for duplicate emails.
+
+  //adding values into the database.
+  
+
+    if (!$mysqli->set_charset("utf8")) {
+        printf("Error loading character set utf8: %s\n", $mysqli->error);
+    } 
+    else {
+      printf("Current character set: %s\n", $mysqli->character_set_name());
     
-  }
 
+      if ($mysqli->query($sql)) {
+          echo "success!";
+        }
 
-  //$result = mysqli_query($con, $sql); 
-  //  if($result){
-  //    echo "success";
-  //    }
-  //  else {
-  //    echo mysqli_error($con);
-  //    }
-
-
-
-
-            //Fetching from your database table.
-//            $query = "SELECT * FROM client_base";
-//            $result = mysql_query($query);
-
-//            if ($result) {
-//                while($row = mysql_fetch_array($result)) {
-//                    $name = $row["$yourfield"];
-//                    echo "Name: $name<br>";
-//                }
-//            }
+    else {
+      echo $mysqli->error;
+    }
+}
+$mysqli->close();
 ?>
