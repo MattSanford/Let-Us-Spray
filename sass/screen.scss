@@ -21,9 +21,21 @@
 	font-size: 5em;
 }
 
-$webkit: -webkit-; 
-$moz: -moz-;
-$o: -o-;
+@mixin keyframes($name) {
+	@-moz-keyframes #{$name} { @content}
+	@-webkit-keyframes #{$name} { @content}
+	@-o-keyframes #{$name} { @content}
+	@keyframes #{$name} { @content}
+}
+$hsize: 450px;
+$wsize: 940px;
+$stretch: 100% 100%;
+@mixin sliderbackgrounds($file) {
+	height: $hsize;
+	width: $wsize;
+	background-size: $stretch;
+
+}
 
 p {
 	font-size: 1.5em;
@@ -32,15 +44,16 @@ p {
 
 li {
 	font-size: 24px;
-	margin: 5px 20px;
+	margin: 10px 20px;
 }
 
 
 #container {
-	height: 100%;
+	@include reset-list-style;
 	font-family: 'Raleway', sans-serif;
 	width: 100%;
-	@include reset-list-style;
+	background: url('/images/wood_pattern.png');
+	background-position: fixed;
 }
 
 header {
@@ -86,7 +99,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', end
 			}
 		}
 
-		@-webkit-keyframes slidedown {
+		@include keyframes(slidedown) {
 			from {
 				margin-top: 0px;
 			}
@@ -104,7 +117,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', end
 			}
 		}
 
-		@webkit-keyframes slideup {
+		@include keyframes(slideup) {
 			from {
 				margin-top: 5px;
 			}
@@ -114,7 +127,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', end
 			}
 		}
 
-		@-webkit-keyframes slidedown1 {
+		@include keyframes(slidedown1) {
 			from {
 				margin-top: 0;
 			}
@@ -126,15 +139,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#02b5f1', end
 
 
 #main {
-background: rgb(2,42,87);
-background: -moz-linear-gradient(top,  rgba(2,42,87,1) 0%, rgba(24,54,86,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,42,87,1)), color-stop(100%,rgba(24,54,86,1)));
-background: -webkit-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
-background: -o-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
-background: -ms-linear-gradient(top,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
-background: linear-gradient(to bottom,  rgba(2,42,87,1) 0%,rgba(24,54,86,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', endColorstr='#183656',GradientType=0 );
 	margin-top: 100px;
+	padding-bottom: 15px;
 	width: 100%;
 
 	&, .badges {
@@ -179,11 +185,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 	}
 	.content-wrap {
 		width: 940px;
-		margin: 10px auto 0;
-		padding: 10px 0 0;
+		margin: 10px auto 15px;
 	}
 
 
+}
+
+$slidepane: slidepane;
+@for $i from 1 through 8 {
+ .#{$slidepane}-#{$i} {
+ 	height: $hsize;
+ 	width: $wsize;
+ 	background-image: url('/images/#{$i}.png');
+ 	background-size: $stretch;
+ }
 }
 
 .icon-side {
@@ -202,12 +217,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 		}
 }
 .bb {
-	margin: 0 2%;
+	margin: 0 1% 0 2%;
+	height: 225px;
 }
-#bb {
-	height: 150px;
-	border-radius: 10px;
+
+#bb-wrap {
+	margin: 0 auto;
+	height: 200px;
+	background-image: url('/images/logos/better-business-logo-official.jpg');
+	background-size: 100% 100%;
+	-webkit-border-radius: 10px;
+	-webkit-animation: flash 1s linear;
+	-webkit-animation-iteration-count: infinite; 
 }
+
+	@include keyframes(flash) {
+		from {
+			-moz-box-shadow: -1px 1px 25px #000000;
+			-webkit-box-shadow: -1px 1px 25px #000000;
+			box-shadow: -1px 1px 25px #000000;
+		}
+		50% {
+			-moz-box-shadow: -1px 1px 5px #000000;
+			-webkit-box-shadow: -1px 1px 5px #000000;
+			box-shadow: -1px 1px 5px #000000;
+		}
+		to {
+			-moz-box-shadow: -1px 1px 25px #000000;
+			-webkit-box-shadow: -1px 1px 25px #000000;
+			box-shadow: -1px 1px 25px #000000;
+		}
+	}
 
 /*==========Icons==========*/
 .iconic {
@@ -276,6 +316,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#022a57', end
 
 .team {
 	float: left;
+	display: none;
 
 }
 
@@ -299,8 +340,8 @@ aside.team-member {
 		background-position: center;
 		background-size: 100%;
 		box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		#{$webkit}box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		#{$moz}box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+		-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	}
 }
 .mailform, #thankyou {
@@ -328,10 +369,13 @@ aside.team-member {
 	}	
 }
 .mailform {
-	padding: 0 5%;
-	h1, h2 {
+	padding: 0 5% 1%;;
+	h4, h2 {
 		color: #00b9f3;
 		text-align: left !important;
+	}
+	h4 {
+		font-size: 3em;
 	}
 
 	input, textarea {
@@ -378,13 +422,6 @@ aside.team-member {
 
 .clear-fix {
 	clear: both;
-}
-
-footer {
-	height: 50px;
-	width: 100%;
-	margin: 0;
-	background: url('/images/black_twill.png');
 }
 
 

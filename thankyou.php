@@ -4,14 +4,14 @@
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 
-	<title>Coming Soon!</title>
+	<title>Thank you!</title>
 
 </head>
 <body>
 	<div id="thankyou">
 		<div id="thanks-text">
-			<h1>Let Us Spray</h1>
-			<h2>Will be live very soon!</h2>
+			<h1>We will respond to your email</h1>
+			<h2>within 3-5 days!</h2>
 		</div>
 	</div>
 </body>

@@ -1,12 +1,22 @@
-<html>
-<head>
-	<title>Let Us Spray</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Let Us Spray Softwash</title>
+	<meta desrciption="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here!">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<link href="/stylesheets/orbit-1.2.3.css" rel="stylesheet">
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="../i/jquery.min.js"></script>
-	<script type="text/javascript" src="../i/jquery.orbit-1.2.3.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.orbit-1.2.3.min.js"></script>
+	<script src="/js/modernizr.custom.38132.js"></script>
+	<script type="text/javascript" src="/js/html5shiv.js"></script>
 	<script type="text/javascript">
      $(window).load(function() {
          $('#featured').orbit();
@@ -17,14 +27,19 @@
 	<div id="container">
 		<header>
 			<div class="header-in">
-				<img class="logo" src="/images/logos/web/sm-transparent.png">
+				<img class="logo" src="/images/logos/web/sm-transparent.png" alt="Let Us Spray Soft Wash">
 			</div>
 		</header>
 		<div id="main">
 			<div id="featured">
-			    <img src="../images/overflow.jpg" alt="Overflow: Hidden No More" />
-			    <img src="../images/captions.jpg"  alt="HTML Captions" />
-			    <img src="../images/features.jpg" alt="and more features" />
+			    <div class="slidepane-1"></div>
+			    <div class="slidepane-2"></div>
+			    <div class="slidepane-3"></div>
+			    <div class="slidepane-4"></div>
+			    <div class="slidepane-5"></div>
+			    <div class="slidepane-6"></div>
+			    <div class="slidepane-7"></div>
+			    <div class="slidepane-8"></div>
 			</div>
 			<div class="content-wrap"> 
 				<div class="content">
@@ -42,7 +57,7 @@
 							<div class="clear-fix"></div>
 					</div>
 					<div id="century21">
-						<h2 class="bg-header" id="century21">SoftWashing - 21<sup>st</sup> Century <em>Technology</em></h2>
+						<h2 class="bg-header">SoftWashing - 21<sup>st</sup> Century <em>Technology</em></h2>
 						<div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
 						<div class="icon-side">
@@ -61,7 +76,7 @@
 						<p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
 						<p>We follow all industry accepted non-pressure/soft washing standards and recommended procedures by SoftWash Systems, ARMA (Asphalt Roof Manufacturers Association), and RCIA (Roof Cleaning Institute of America). Our specially blended cleaning solutions are biodegradable and exclusive to SoftWash Systems.</p>
 						<div class="icon-side bb">
-							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><img id="bb" src="../images/logos/better-business-logo-official.jpg"></a>
+							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><div id="bb-wrap"></div></a>
 							<h4>Click the Image!</h4>
 						</div>	
 						<p>Providing for both residential and light commercial clients, we are fully insured, licensed, rated A+ with the Richmond BBB, and a Certified Member of SoftWash Systems.</p>
@@ -110,7 +125,6 @@
 								<li>Our team only uses Softwash Systems products.</li>
 								<li>Our team is Softwash Systems certified!</li>
 							</ol>
-						</h2>
 					</div>
 				</div>
 				<section class="team content">
@@ -127,34 +141,13 @@
 					</div>
 				</section>
 				<div class="mailform">
-					<h1 id="contact">Contact Us!</h1>
+					<h4>Contact Us!</h4>
 					<?php include('contact.php'); ?>
 				<div class="clear-fix"></div>
 			</div>
 		</div>
-				<footer></footer>
 	</div>
-	<script type="text/javascript">
-    $(document).ready(function(){
-    	$(".appear").hide();
-        $("textarea").focus(function (){
-            $(".appear").fadeIn();
-		});
-    });													
-	</script>
-	<script type="text/javascript">
-	$("#submit").click(function(e) {
-		e.preventDefault();
-var data_string = $("form#contact").serializeArray();
-$.ajax({
-	type: "POST",
-	url: "database.php",
-	data: data_string,
-	success: function(){
-	}
-});
-return false;
-	});
-	</script>
+</div>
+	<script src="/js/animations.js"></script>
 </body>
 </html>
