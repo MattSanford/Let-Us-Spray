@@ -14,17 +14,17 @@
 	<link href="/stylesheets/orbit-1.2.3.css" rel="stylesheet">
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/jquery.orbit-1.2.3.min.js"></script>
+	<!--><script type="text/javascript" src="/js/jquery.orbit-1.2.3.min.js"></script> -->
 	<script src="/js/modernizr.custom.38132.js"></script>
 	<script type="text/javascript" src="/js/html5shiv.js"></script>
-	<script type="text/javascript">
+	<!--<script type="text/javascript">
      $(window).load(function() {
          $('#featured').orbit();
      });
-</script>
+</script> -->
 </head>
 <body>
-	<div id="container">
+	<div class="container">
 		<header>
 			<div class="header-in">
 				<img class="logo" src="/images/logos/web/sm-transparent.png" alt="Let Us Spray Soft Wash">
@@ -32,17 +32,21 @@
 		</header>
 		<div id="main">
 			<div id="featured">
-			    <div class="slidepane-1"></div>
-			    <div class="slidepane-2"></div>
-			    <div class="slidepane-3"></div>
-			    <div class="slidepane-4"></div>
-			    <div class="slidepane-5"></div>
-			    <div class="slidepane-6"></div>
-			    <div class="slidepane-7"></div>
-			    <div class="slidepane-8"></div>
+
 			</div>
 			<div class="content-wrap"> 
 				<div class="content">
+								<div class="ribbon-wrapper-h">
+			<div class="ribbon-front-h">
+				<a href="/rust-removal">Rust Removal</a>
+			</div>
+		<div class="ribbon-edge-topleft-h"></div>
+		<div class="ribbon-edge-topright"></div>
+		<div class="ribbon-edge-bottomleft-h"></div>
+		<div class="ribbon-edge-bottomright"></div>
+		<div class="ribbon-back-left-h"></div>
+		<div class="ribbon-back-right"></div>
+	</div>
 					<div id="welcome">
 						<h1>Welcome!</h1>
 						<h2 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h2>
