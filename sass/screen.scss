@@ -161,10 +161,30 @@ header {
 	.bg-header {
 		background: url('/images/black_twill.png');
 		padding: 15px;
-		color: #00b9f3;
-		&:nth-child(1+2) {
+
+		&.rust {
+			background: none;
+			margin: 0;
 		}
+
+		&#rusty {
+		}
+
 	}
+
+			#rusty-box {
+		-moz-box-shadow: 0px -36px 60px #cf5228;
+		-webkit-box-shadow: 0px -36px 60px #cf5228;
+		box-shadow: 0px -36px 60px #cf5228;
+		-webkit-animation: rust .9s;
+		text-decoration: underline;
+
+		&:hover {
+			-webkit-animation: norust .9s;
+			box-shadow: none;
+		}
+		}
+
 
 	.badges {
 		background: url('/images/grid.png');
@@ -197,6 +217,25 @@ header {
 
 
 }
+
+	@include keyframes(rust) {
+		from {	
+		box-shadow: none;
+		}
+		to {
+		box-shadow: -1px -36px 60px #cf5228;
+		}
+	}
+
+	@include keyframes(norust) {
+		from {
+		box-shadow: -1px -36px 60px #cf5228;
+		}
+		to {
+		box-shadow:  none;
+		}
+	}
+
 
 $slidepane: slidepane;
 @for $i from 1 through 8 {
