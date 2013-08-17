@@ -868,21 +868,18 @@ aside.team-member {
   font-size: 2em;
 }
 
-/* line 515, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .ribbon-front,
-.ribbon-back-left,
-.ribbon-back-right {
+.ribbon-back-left {
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -khtml-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
-/* line 525, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .ribbon-edge-topleft,
-.ribbon-edge-topright,
-.ribbon-edge-bottomleft,
-.ribbon-edge-bottomright {
+.ribbon-edge-bottomleft {
   position: absolute;
   z-index: 1;
   border-style: solid;
@@ -890,49 +887,30 @@ aside.team-member {
   width: 0px;
 }
 
-/* line 538, ../sass/screen.scss */
-.ribbon-edge-bottomleft,
-.ribbon-edge-bottomright {
+/* line 533, ../sass/screen.scss */
+.ribbon-edge-bottomleft {
   top: 40px;
 }
 
-/* line 543, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-bottomleft {
   left: -10px;
   border-color: transparent #00b9f3 transparent transparent;
 }
 
-/* line 548, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 .ribbon-edge-topleft {
   top: -10px;
   border-width: 10px 10px 0 0;
 }
 
-/* line 552, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .ribbon-edge-bottomleft {
   border-width: 0 10px 0px 0;
 }
 
-/* line 557, ../sass/screen.scss */
-.ribbon-edge-topright,
-.ribbon-edge-bottomright {
-  left: 100px;
-  border-color: transparent transparent transparent #00b9f3;
-}
-
-/* line 562, ../sass/screen.scss */
-.ribbon-edge-topright {
-  top: 0px;
-  border-width: 0px 0 0 0px;
-}
-
-/* line 566, ../sass/screen.scss */
-.ribbon-edge-bottomright {
-  border-width: 0 0 0px 0px;
-}
-
-/* line 570, ../sass/screen.scss */
+/* line 552, ../sass/screen.scss */
 .ribbon-back-left {
   position: absolute;
   top: -10px;
@@ -943,19 +921,8 @@ aside.team-member {
   z-index: 0;
 }
 
-/* line 579, ../sass/screen.scss */
-.ribbon-back-right {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 0px;
-  height: 40px;
-  background-color: #0294C0;
-  z-index: 0;
-}
-
 /* ribbon style */
-/* line 592, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 .ribbon-wrapper-h {
   position: relative;
   border-bottom: 0px solid #cccccc;
@@ -965,7 +932,7 @@ aside.team-member {
   -webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
 }
 
-/* line 601, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 .ribbon-front-h {
   background-color: #cf5328;
   height: 40px;
@@ -975,28 +942,25 @@ aside.team-member {
   left: -10px;
   z-index: 2;
 }
-/* line 608, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .ribbon-front-h a {
   color: white;
   text-decoration: none;
   font-size: 2em;
 }
 
-/* line 618, ../sass/screen.scss */
+/* line 589, ../sass/screen.scss */
 .ribbon-front,
-.ribbon-back-left-h,
-.ribbon-back-right {
+.ribbon-back-left-h {
   -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -khtml-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
   -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
-/* line 628, ../sass/screen.scss */
+/* line 598, ../sass/screen.scss */
 .ribbon-edge-topleft-h,
-.ribbon-edge-topright,
-.ribbon-edge-bottomleft-h,
-.ribbon-edge-bottomright {
+.ribbon-edge-bottomleft-h {
   position: absolute;
   z-index: 1;
   border-style: solid;
@@ -1004,49 +968,29 @@ aside.team-member {
   width: 0px;
 }
 
-/* line 641, ../sass/screen.scss */
-.ribbon-edge-bottomleft-h,
-.ribbon-edge-bottomright {
+/* line 609, ../sass/screen.scss */
+.ribbon-edge-bottomleft-h {
   top: 40px;
 }
 
-/* line 646, ../sass/screen.scss */
-.ribbon-edge-topleft-h,
-.ribbon-edge-bottomleft {
+/* line 613, ../sass/screen.scss */
+.ribbon-edge-topleft-h {
   left: -10px;
   border-color: transparent #cf5328 transparent transparent;
 }
 
-/* line 651, ../sass/screen.scss */
+/* line 618, ../sass/screen.scss */
 .ribbon-edge-topleft-h {
   top: -10px;
   border-width: 10px 10px 0 0;
 }
 
-/* line 655, ../sass/screen.scss */
+/* line 622, ../sass/screen.scss */
 .ribbon-edge-bottomleft-h {
   border-width: 0 10px 0px 0;
 }
 
-/* line 660, ../sass/screen.scss */
-.ribbon-edge-topright,
-.ribbon-edge-bottomright {
-  left: 100px;
-  border-color: transparent transparent transparent #cf5328;
-}
-
-/* line 665, ../sass/screen.scss */
-.ribbon-edge-topright {
-  top: 0px;
-  border-width: 0px 0 0 0px;
-}
-
-/* line 669, ../sass/screen.scss */
-.ribbon-edge-bottomright {
-  border-width: 0 0 0px 0px;
-}
-
-/* line 673, ../sass/screen.scss */
+/* line 627, ../sass/screen.scss */
 .ribbon-back-left-h {
   position: absolute;
   top: -10px;
@@ -1054,16 +998,5 @@ aside.team-member {
   width: 30px;
   height: 40px;
   background-color: #BA4B23;
-  z-index: 0;
-}
-
-/* line 682, ../sass/screen.scss */
-.ribbon-back-right {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 0px;
-  height: 40px;
-  background-color: #0294C0;
   z-index: 0;
 }
