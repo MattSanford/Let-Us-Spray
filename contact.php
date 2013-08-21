@@ -2,9 +2,9 @@
 	<table>
 		<tbody>
 			<tr>
-				<td><h2>First Name: </h2></td>
-				<td><h2>Last Name: </h2></td>
-				<td><h2>Email Address: </h2></td>
+				<td><label>First Name: </label></td>
+				<td><label>Last Name: </label></td>
+				<td><label>Email Address: </label></td>
 			</tr>
 			<tr>
 				<td><input type="text" name="first_name" placeholder="Johnny"></td>
@@ -12,8 +12,8 @@
 				<td><input type="text" name="email" placeholder="johnny@email.com"></td>
 			</tr>
 			<tr>
-				<td><h2>Street Address:</h2></td>
-				<td colspan=2 ><h2>What's Dirty?</h2></td>
+				<td><label>Street Address:</label></td>
+				<td colspan=2 ><label>What's Dirty?</label></td>
 			</tr>
 			<tr>
 				<td><input type="text" name="address" placeholder="123 Applegrove Rd. Appletown, VA 12345"></td>
@@ -27,7 +27,7 @@
 				</td>
 			</tr>
 			<tr>
-				<td colspan=3><h2>Message: </h2></td>
+				<td colspan=3><label>Message: </label></td>
 			</tr>
 		</tbody>
 	</table>
