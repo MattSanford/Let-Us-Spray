@@ -33,7 +33,7 @@
 </script>
 </head>
 <body>
-	<div id="container">
+	<div class="container">
 		<header>
 			<div class="header-in">
 				<img class="logo" src="/images/logos/web/sm-transparent.png" alt="Let Us Spray Soft Wash">
@@ -72,6 +72,17 @@
 				</section>
 			<div class="content-wrap"> 
 				<div class="content">
+								<div class="ribbon-wrapper-h">
+			<div class="ribbon-front-h">
+				<a href="/rust-removal">Rust Removal</a>
+			</div>
+		<div class="ribbon-edge-topleft-h"></div>
+		<div class="ribbon-edge-topright"></div>
+		<div class="ribbon-edge-bottomleft-h"></div>
+		<div class="ribbon-edge-bottomright"></div>
+		<div class="ribbon-back-left-h"></div>
+		<div class="ribbon-back-right"></div>
+	</div>
 					<div id="welcome">
 						<h1>Welcome!</h1>
 						<h2 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h2>
