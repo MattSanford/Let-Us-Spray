@@ -5,23 +5,32 @@
 <!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
     <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Let Us Spray Softwash</title>
-	<meta desrciption="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here!">
+	<meta name="description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!">
+	<meta property="og:title" content="Richmond's Premier Roof Cleaning Solution"/>
+	<meta property="og:image" content="http://letusspraysoftwash.com/images/logos/web/lg-transparent.jpg"/>
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:image:width" content="700" />
+	<meta property="og:image:height" content="514" />
+	<meta property="og:url" content="http://letusspraysoftwash.com" />
+	<meta property="og:site_name" content="Let Us Spray Softwash"/>
+	<meta property="og:description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!"/>	
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-	<link href="/stylesheets/orbit-1.2.3.css" rel="stylesheet">
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/flexslider.css" rel="stylesheet">
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<!--><script type="text/javascript" src="/js/jquery.orbit-1.2.3.min.js"></script> -->
+	<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
 	<script src="/js/modernizr.custom.38132.js"></script>
 	<script type="text/javascript" src="/js/html5shiv.js"></script>
-	<!--<script type="text/javascript">
-     $(window).load(function() {
-         $('#featured').orbit();
-     });
-</script> -->
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
 </head>
 <body>
 	<div class="container">
@@ -31,9 +40,36 @@
 			</div>
 		</header>
 		<div id="main">
-			<div id="featured">
-
-			</div>
+			<section>
+				<div class="flexslider">
+					<ul class="slides">
+					    <li>
+					    	<img src="/images/1.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/2.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/3.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/4.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/5.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/6.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/7.jpg" />
+					    </li>
+					    <li>
+					    	<img src="/images/8.jpg" />
+					    </li>
+					</ul>
+				</div>
+				</section>
 			<div class="content-wrap"> 
 				<div class="content">
 								<div class="ribbon-wrapper-h">
@@ -61,7 +97,7 @@
 							<div class="clear-fix"></div>
 					</div>
 					<div id="century21">
-						<h2 class="bg-header">SoftWashing - 21<sup>st</sup> Century <em>Technology</em></h2>
+						<h2 class="bg-header">SoftWashing - 21<sup>st</sup> Century Technology</h2>
 						<div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
 						<div class="icon-side">
@@ -106,7 +142,7 @@
 						<h3 class="question">"Are you going to pressure wash my roof?"</h3>
 						<p>No, we highly recommend that you <em>NEVER</em> allow anyone to pressure wash your roof at <em>ANY</em> pressure.  We often compete against contractors who bid much lower than us.  That is, until the homeowner finds out that they are going to pressure wash their roof!  We use a soft washing system that uses no more pressure than a residential garden hose.  As a matter of fact our soft washing system is approved by ARMA (Asphalt Roofing Manufacturing Association) and is recommended by most of the largest insurance companies as a form of general maintenance.</p>
 						<h3 class="question">"How long before I will see it work?"</h3>
-						<p>In most cases you will see a dramatic improvement within minutes of our Roof Renew application.  If the roof is really dirty then it may require a moderate rain to gently wash off the dead algea.  If your roof has actively growing green moss then you will see what looks like popcorn on the shingle after we have applied our Roof Renew solution.  After we kill the moss it will take a few weeks for the root system to dry up release the roof granules.  The only way to remove moss immediately is to use water pressure greater than your garden hose, and that is definitely not compatible with your roof warranty or it's longevity.</p>						
+						<p>In most cases you will see a dramatic improvement within minutes of our Roof Renew application.  If the roof is really dirty then it may require a moderate rain to gently wash off the dead algae.  If your roof has actively growing green moss then you will see what looks like popcorn on the shingle after we have applied our Roof Renew solution.  After we kill the moss it will take a few weeks for the root system to dry up release the roof granules.  The only way to remove moss immediately is to use water pressure greater than your garden hose, and that is definitely not compatible with your roof warranty or it's longevity.</p>						
 						<h3 class="question">"How long will the washing last?"</h3>
 						<p>In most cases our Roof Renew solution will keep your roof clean of black streaks for approximately 4-6 years, depending on how many trees you have around your house. We offer a 5-year limited warranty when you opt to have the entire surface of your roof treated.</p>
 						<h3 class="question">"Do I need to be home when you wash my roof?"</h3>
@@ -149,10 +185,12 @@
 					<?php include('contact.php'); ?>
 				<div class="clear-fix"></div>
 			</div>
+			<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy</p></footer>
 		</div>
-	</div>
+	</div>	
 </div>
 	<script src="/js/animations.js"></script>
+<<<<<<< HEAD
 	<script type="text/javascript"><!--
 google_ad_client = "ca-pub-4516501803385461";
 /* test */
@@ -164,5 +202,8 @@ google_ad_height = 240;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
+=======
+	<script src="/js/analytics.js"></script>
+>>>>>>> e4d8ff83f8024687de9c0acd849058ae6dbfd43c
 </body>
 </html>
