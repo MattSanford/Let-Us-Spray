@@ -74,7 +74,7 @@
 				<div class="content">
 								<div class="ribbon-wrapper-h">
 			<div class="ribbon-front-h">
-				<a href="/rust-removal">Rust Removal</a>
+				<a href="#">Rust Removal (coming soon)</a>
 			</div>
 		<div class="ribbon-edge-topleft-h"></div>
 		<div class="ribbon-edge-topright"></div>
@@ -83,7 +83,7 @@
 		<div class="ribbon-back-left-h"></div>
 		<div class="ribbon-back-right"></div>
 	</div>
-					<div id="welcome first" >
+					<div id="welcome first">
 						<h1>Welcome!</h1>
 						<h2 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h2>
 						<div class="icon-side">
@@ -113,7 +113,16 @@
 					<div class="about" id="third">
 						<h2 class="bg-header" id="about">About Us</h2>
 						<p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
-						<p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
+							<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><script type="text/javascript"><!--
+google_ad_client = "ca-pub-4516501803385461";	
+/* test */
+google_ad_slot = "7618200230";
+google_ad_width = 120;
+google_ad_height = 240;
+//-->
+</script><p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
 						<p>We follow all industry accepted non-pressure/soft washing standards and recommended procedures by SoftWash Systems, ARMA (Asphalt Roof Manufacturers Association), and RCIA (Roof Cleaning Institute of America). Our specially blended cleaning solutions are biodegradable and exclusive to SoftWash Systems.</p>
 						<div class="icon-side bb">
 							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><div id="bb-wrap"></div></a>
@@ -181,7 +190,7 @@
 					</div>
 				</section>
 				<div class="mailform">
-					<h4>Contact Us!</h4>
+					<span>Contact Us!</span>
 					<?php include('contact.php'); ?>
 				<div class="clear-fix"></div>
 			</div>
@@ -190,6 +199,8 @@
 	</div>	
 </div>
 	<script src="/js/animations.js"></script>
+
+
 	<script src="/js/analytics.js"></script>
 	<script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
 </body>
