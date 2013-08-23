@@ -83,7 +83,7 @@
 		<div class="ribbon-back-left-h"></div>
 		<div class="ribbon-back-right"></div>
 	</div>
-					<div id="welcome">
+					<div id="welcome first" >
 						<h1>Welcome!</h1>
 						<h2 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h2>
 						<div class="icon-side">
@@ -96,7 +96,7 @@
 						</div>
 							<div class="clear-fix"></div>
 					</div>
-					<div id="century21">
+					<div id="century21 second">
 						<h2 class="bg-header">SoftWashing - 21<sup>st</sup> Century Technology</h2>
 						<div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
@@ -110,7 +110,7 @@
 
 							<div class="clear-fix"></div>		
 					</div>
-					<div class="about">
+					<div class="about" id="third">
 						<h2 class="bg-header" id="about">About Us</h2>
 						<p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
 						<p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
@@ -123,7 +123,7 @@
 						<div class="clear-fix"></div>		
 					
 					</div>
-					<div class="technology">
+					<div class="technology" id="fourth">
 						<h2 class="bg-header" id="technology">The Unique Soft Wash System</h2>
 						<p>Dark stains on your roof are caused primarily by a persistent type of algae, Gloeocapsa Magma. The SoftWash System gently removes the staining without harming the roof itself.  AND it kills the algae and other harmful organisms so the stains don't come back!</p>
 						<ol>
@@ -135,7 +135,7 @@
 							<li>Our cleaning solution is applied with an electric pump, which greatly minimizes noise and pollution.</li>
 						</ol>
 					</div>
-					<div class="FAQ">
+					<div class="FAQ" id="fifth">
 						<h2 class="bg-header">FAQ's</h2>
 						<h3 class="question">"What causes the black marks on my roof?"</h3>
 						<p>Most roof stains are caused by the growth of algae, lichen colonies or moss that feed on organic matter frequently found on roof surfaces. The portions of a roof that receive the least amount of sunlight are more likely to have roof stains first. This explains why some homes may have roof stains only on one side of the roof, typically the northern and/or western exposure or in heavily shaded areas.</p>
@@ -150,7 +150,7 @@
 						<h3 class="question">"Will your chemicals kill my plants?"</h3>
 						<p>If used improperly there can be some damage to vegetation. That is also why we like to ask all of our customers to water their plants heavily the night before and just after treatment.  In most cases you will not notice any damage to your plants.  In a very few cases there could be a light browning in a few areas that will go away quickly.</p>
 					</div>
-					<div class="why">
+					<div class="why" id="sixth">
 						<h2 class="bg-header">Why should I have my roof cleaned?</h2>
 							<h1>top 10 reasons to have your roof cleaned</h1>
 							<ol>
@@ -191,5 +191,6 @@
 </div>
 	<script src="/js/animations.js"></script>
 	<script src="/js/analytics.js"></script>
+	<script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
 </body>
 </html>
