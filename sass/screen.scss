@@ -222,7 +222,7 @@ header {
 			}
 		}
 	}
-	.content,#welcome, .team {
+	.content,.welcome, .team {
 		background: url('/images/pattern-8ylf.png');
 
 	}
@@ -268,7 +268,7 @@ $slidepane: slidepane;
 	float: left;
 	margin: 10% 1% 0;
 
-	h1 {
+	span {
 		text-transform: capitalize;
 		font-size: 3em;
 		margin-bottom: 35px;
@@ -346,7 +346,7 @@ $slidepane: slidepane;
 		}
 	}
 
-	#century21 {
+	.century21 {
 
 
 		p {
@@ -364,6 +364,7 @@ $slidepane: slidepane;
 	font-family: sans-serif;
 	font-weight: 800;
 	margin-bottom: 0;
+	font-size: 1.75em;
 }
 	p {
 		margin-top: 5px;
