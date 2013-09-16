@@ -37,18 +37,21 @@ $stretch: 100% 100%;
 
 }
 
+html {
+	font-size: 16px;
+}
+
 p {
-	font-size: 1.5em;
+	font-size: 2.2em;
 	line-height: 35px;
 }
 
 li {
-	font-size: 24px;
 	margin: 10px 20px;
 }
 
 body {
-
+	font-size: 62.5%;
 }
 
 .container {
@@ -166,15 +169,12 @@ header {
 	-webkit-box-shadow:inset 0px 1px 6px #000000;
 	box-shadow:inset 0px 1px 6px #000000;
 	}
-	h1 {
-		text-align: center;
-	}
 
 	.bg-header {
 		background: url('/images/black_twill.png');
 		padding: 15px;
 		color: #00b9f3;
-
+		font-size: 3em;
 
 
 		&.rust {
@@ -270,8 +270,15 @@ $slidepane: slidepane;
 
 	span {
 		text-transform: capitalize;
-		font-size: 3em;
+		font-size: 4.5em;
 		margin-bottom: 35px;
+
+	}
+
+	.block-icon {
+		display: block;
+		text-align: center;
+		margin-top: .5em;
 	}
 
 	&:nth-child(2) {
@@ -322,7 +329,7 @@ $slidepane: slidepane;
 
 .arrow-d:after {
 	content: '\2193';
-	margin-left: 15px;
+	margin-left: 23px;
 
 }
 .text-side {

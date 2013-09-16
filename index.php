@@ -100,9 +100,9 @@
 						<div><div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
 						<div class="icon-side">
-							<h1>$$$</h1>
+							<span class="block-icon">$$$</span>
 							<span class="iconic arrow-d"></span>
-							<h1>$</h1>		
+							<span class="block-icon">$</span>		
 						</div>						
 							<p>The power of chemistry is what makes our Soft-wash process so effective. Different surfaces and different contaminants require different levels of "soft washing". With each cleaning job we perform, our cleaning solution is custom mixed on site and applied. We do not have a "one size fits all" approach to cleaning. We will customize a cleaning plan to maximize effectiveness while also keeping your cost as low as possible!</p>
 						</div>
