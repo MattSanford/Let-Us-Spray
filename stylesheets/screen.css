@@ -10,28 +10,23 @@
   font-style: normal;
 }
 
-/* line 40, ../sass/screen.scss */
 html {
   font-size: 16px;
 }
 
-/* line 44, ../sass/screen.scss */
 p {
   font-size: 2.2em;
   line-height: 35px;
 }
 
-/* line 49, ../sass/screen.scss */
 li {
   margin: 10px 20px;
 }
 
-/* line 53, ../sass/screen.scss */
 body {
   font-size: 62.5%;
 }
 
-/* line 57, ../sass/screen.scss */
 .container {
   list-style: decimal;
   background: #02b5f1;
@@ -46,7 +41,6 @@ body {
   width: 100%;
   background-position: fixed;
 }
-/* line 72, ../sass/screen.scss */
 .container#r {
   background: #cf5328;
   /* Old browsers */
@@ -66,7 +60,6 @@ body {
   /* IE6-9 */
 }
 
-/* line 85, ../sass/screen.scss */
 header {
   background: url("/images/WaterDroplets.png"), url("/images/grid.png");
   height: 100px;
@@ -76,263 +69,217 @@ header {
   width: 100%;
   z-index: 2000;
 }
-/* line 96, ../sass/screen.scss */
 header .header-in {
   margin: 0 auto;
   width: 980px;
 }
-/* line 100, ../sass/screen.scss */
 header .header-in img {
   margin: 0 auto;
   display: block;
   -webkit-animation: slideup 0.2s;
 }
-/* line 105, ../sass/screen.scss */
 header .header-in img:hover {
   margin-top: 5px;
   -webkit-animation: slidedown1 0.2s;
 }
 
-/* line 114, ../sass/screen.scss */
 .appear {
   float: right;
   margin-right: 100px;
 }
-/* line 118, ../sass/screen.scss */
 .appear:hover {
   -webkit-animation: slidedown 0.2s;
 }
 
 @-moz-keyframes slidedown {
-  /* line 124, ../sass/screen.scss */
   from {
     margin-top: 0px;
   }
 
-  /* line 127, ../sass/screen.scss */
   25% {
     margin-top: 5px;
   }
 
-  /* line 130, ../sass/screen.scss */
   50% {
     margin-top: 0px;
   }
 
-  /* line 133, ../sass/screen.scss */
   75% {
     margin-top: 5px;
   }
 
-  /* line 136, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-webkit-keyframes slidedown {
-  /* line 124, ../sass/screen.scss */
   from {
     margin-top: 0px;
   }
 
-  /* line 127, ../sass/screen.scss */
   25% {
     margin-top: 5px;
   }
 
-  /* line 130, ../sass/screen.scss */
   50% {
     margin-top: 0px;
   }
 
-  /* line 133, ../sass/screen.scss */
   75% {
     margin-top: 5px;
   }
 
-  /* line 136, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-o-keyframes slidedown {
-  /* line 124, ../sass/screen.scss */
   from {
     margin-top: 0px;
   }
 
-  /* line 127, ../sass/screen.scss */
   25% {
     margin-top: 5px;
   }
 
-  /* line 130, ../sass/screen.scss */
   50% {
     margin-top: 0px;
   }
 
-  /* line 133, ../sass/screen.scss */
   75% {
     margin-top: 5px;
   }
 
-  /* line 136, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @keyframes slidedown {
-  /* line 124, ../sass/screen.scss */
   from {
     margin-top: 0px;
   }
 
-  /* line 127, ../sass/screen.scss */
   25% {
     margin-top: 5px;
   }
 
-  /* line 130, ../sass/screen.scss */
   50% {
     margin-top: 0px;
   }
 
-  /* line 133, ../sass/screen.scss */
   75% {
     margin-top: 5px;
   }
 
-  /* line 136, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-moz-keyframes slideup {
-  /* line 142, ../sass/screen.scss */
   from {
     margin-top: 5px;
   }
 
-  /* line 146, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-webkit-keyframes slideup {
-  /* line 142, ../sass/screen.scss */
   from {
     margin-top: 5px;
   }
 
-  /* line 146, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-o-keyframes slideup {
-  /* line 142, ../sass/screen.scss */
   from {
     margin-top: 5px;
   }
 
-  /* line 146, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @keyframes slideup {
-  /* line 142, ../sass/screen.scss */
   from {
     margin-top: 5px;
   }
 
-  /* line 146, ../sass/screen.scss */
   to {
     margin-top: 0px;
   }
 }
 
 @-moz-keyframes slidedown1 {
-  /* line 152, ../sass/screen.scss */
   from {
     margin-top: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
   to {
     margin-top: 5px;
   }
 }
 
 @-webkit-keyframes slidedown1 {
-  /* line 152, ../sass/screen.scss */
   from {
     margin-top: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
   to {
     margin-top: 5px;
   }
 }
 
 @-o-keyframes slidedown1 {
-  /* line 152, ../sass/screen.scss */
   from {
     margin-top: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
   to {
     margin-top: 5px;
   }
 }
 
 @keyframes slidedown1 {
-  /* line 152, ../sass/screen.scss */
   from {
     margin-top: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
   to {
     margin-top: 5px;
   }
 }
 
-/* line 162, ../sass/screen.scss */
 #main {
   margin-top: 100px;
   padding-bottom: 15px;
   width: 100%;
 }
-/* line 167, ../sass/screen.scss */
 #main, #main .badges {
   moz-box-shadow: inset 0px 1px 6px black;
   -webkit-box-shadow: inset 0px 1px 6px black;
   box-shadow: inset 0px 1px 6px black;
 }
-/* line 173, ../sass/screen.scss */
 #main .bg-header {
   background: url("/images/black_twill.png");
   padding: 15px;
   color: #00b9f3;
   font-size: 3em;
 }
-/* line 180, ../sass/screen.scss */
 #main .bg-header.rust {
   background: none;
   margin: 0;
   color: black;
 }
-/* line 191, ../sass/screen.scss */
 #main #rusty-box {
   -moz-box-shadow: 0px -36px 60px #cf5228;
   -webkit-box-shadow: 0px -36px 60px #cf5228;
@@ -340,140 +287,116 @@ header .header-in img:hover {
   -webkit-animation: rust 0.9s;
   text-decoration: underline;
 }
-/* line 198, ../sass/screen.scss */
 #main #rusty-box:hover {
   -webkit-animation: norust 0.9s;
   box-shadow: none;
 }
-/* line 205, ../sass/screen.scss */
 #main .badges {
   background: url("/images/grid.png");
   height: 200px;
   padding: 25px 10px 10px;
 }
-/* line 209, ../sass/screen.scss */
 #main .badges .badge-wrap {
   margin: 0 auto;
   width: 940px;
 }
-/* line 213, ../sass/screen.scss */
 #main .badges .badge-wrap div {
   width: 31.91489361702128%;
   height: 175px;
   border: 1px solid white;
   float: left;
 }
-/* line 220, ../sass/screen.scss */
 #main .badges .badge-wrap div:nth-child(2) {
   margin: 0 1.5%;
 }
-/* line 225, ../sass/screen.scss */
 #main .content, #main .welcome, #main .team {
   background: url("/images/pattern-8ylf.png");
 }
-/* line 229, ../sass/screen.scss */
 #main .content-wrap {
   width: 940px;
   margin: 10px auto 15px;
 }
 
 @-moz-keyframes rust {
-  /* line 238, ../sass/screen.scss */
   from {
     box-shadow: none;
   }
 
-  /* line 241, ../sass/screen.scss */
   to {
     box-shadow: -1px -36px 60px #cf5228;
   }
 }
 
 @-webkit-keyframes rust {
-  /* line 238, ../sass/screen.scss */
   from {
     box-shadow: none;
   }
 
-  /* line 241, ../sass/screen.scss */
   to {
     box-shadow: -1px -36px 60px #cf5228;
   }
 }
 
 @-o-keyframes rust {
-  /* line 238, ../sass/screen.scss */
   from {
     box-shadow: none;
   }
 
-  /* line 241, ../sass/screen.scss */
   to {
     box-shadow: -1px -36px 60px #cf5228;
   }
 }
 
 @keyframes rust {
-  /* line 238, ../sass/screen.scss */
   from {
     box-shadow: none;
   }
 
-  /* line 241, ../sass/screen.scss */
   to {
     box-shadow: -1px -36px 60px #cf5228;
   }
 }
 
 @-moz-keyframes norust {
-  /* line 247, ../sass/screen.scss */
   from {
     box-shadow: -1px -36px 60px #cf5228;
   }
 
-  /* line 250, ../sass/screen.scss */
   to {
     box-shadow: none;
   }
 }
 
 @-webkit-keyframes norust {
-  /* line 247, ../sass/screen.scss */
   from {
     box-shadow: -1px -36px 60px #cf5228;
   }
 
-  /* line 250, ../sass/screen.scss */
   to {
     box-shadow: none;
   }
 }
 
 @-o-keyframes norust {
-  /* line 247, ../sass/screen.scss */
   from {
     box-shadow: -1px -36px 60px #cf5228;
   }
 
-  /* line 250, ../sass/screen.scss */
   to {
     box-shadow: none;
   }
 }
 
 @keyframes norust {
-  /* line 247, ../sass/screen.scss */
   from {
     box-shadow: -1px -36px 60px #cf5228;
   }
 
-  /* line 250, ../sass/screen.scss */
   to {
     box-shadow: none;
   }
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-1 {
   height: 450px;
   width: 940px;
@@ -481,7 +404,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-2 {
   height: 450px;
   width: 940px;
@@ -489,7 +411,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-3 {
   height: 450px;
   width: 940px;
@@ -497,7 +418,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-4 {
   height: 450px;
   width: 940px;
@@ -505,7 +425,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-5 {
   height: 450px;
   width: 940px;
@@ -513,7 +432,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-6 {
   height: 450px;
   width: 940px;
@@ -521,7 +439,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-7 {
   height: 450px;
   width: 940px;
@@ -529,7 +446,6 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 258, ../sass/screen.scss */
 .slidepane-8 {
   height: 450px;
   width: 940px;
@@ -537,36 +453,30 @@ header .header-in img:hover {
   background-size: 100% 100%;
 }
 
-/* line 266, ../sass/screen.scss */
 .icon-side {
   height: 200px;
   float: left;
   margin: 10% 1% 0;
 }
-/* line 271, ../sass/screen.scss */
 .icon-side span {
   text-transform: capitalize;
   font-size: 4.5em;
   margin-bottom: 35px;
 }
-/* line 278, ../sass/screen.scss */
 .icon-side .block-icon {
   display: block;
   text-align: center;
   margin-top: .5em;
 }
-/* line 284, ../sass/screen.scss */
 .icon-side:nth-child(2) {
   margin: 0 25px;
 }
 
-/* line 288, ../sass/screen.scss */
 .bb {
   margin: 0 1% 0 2%;
   height: 225px;
 }
 
-/* line 293, ../sass/screen.scss */
 #bb-wrap {
   margin: 0 auto;
   height: 200px;
@@ -578,21 +488,18 @@ header .header-in img:hover {
 }
 
 @-moz-keyframes flash {
-  /* line 304, ../sass/screen.scss */
   from {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
     box-shadow: -1px 1px 25px black;
   }
 
-  /* line 309, ../sass/screen.scss */
   50% {
     -moz-box-shadow: -1px 1px 5px black;
     -webkit-box-shadow: -1px 1px 5px black;
     box-shadow: -1px 1px 5px black;
   }
 
-  /* line 314, ../sass/screen.scss */
   to {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
@@ -601,21 +508,18 @@ header .header-in img:hover {
 }
 
 @-webkit-keyframes flash {
-  /* line 304, ../sass/screen.scss */
   from {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
     box-shadow: -1px 1px 25px black;
   }
 
-  /* line 309, ../sass/screen.scss */
   50% {
     -moz-box-shadow: -1px 1px 5px black;
     -webkit-box-shadow: -1px 1px 5px black;
     box-shadow: -1px 1px 5px black;
   }
 
-  /* line 314, ../sass/screen.scss */
   to {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
@@ -624,21 +528,18 @@ header .header-in img:hover {
 }
 
 @-o-keyframes flash {
-  /* line 304, ../sass/screen.scss */
   from {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
     box-shadow: -1px 1px 25px black;
   }
 
-  /* line 309, ../sass/screen.scss */
   50% {
     -moz-box-shadow: -1px 1px 5px black;
     -webkit-box-shadow: -1px 1px 5px black;
     box-shadow: -1px 1px 5px black;
   }
 
-  /* line 314, ../sass/screen.scss */
   to {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
@@ -647,21 +548,18 @@ header .header-in img:hover {
 }
 
 @keyframes flash {
-  /* line 304, ../sass/screen.scss */
   from {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
     box-shadow: -1px 1px 25px black;
   }
 
-  /* line 309, ../sass/screen.scss */
   50% {
     -moz-box-shadow: -1px 1px 5px black;
     -webkit-box-shadow: -1px 1px 5px black;
     box-shadow: -1px 1px 5px black;
   }
 
-  /* line 314, ../sass/screen.scss */
   to {
     -moz-box-shadow: -1px 1px 25px black;
     -webkit-box-shadow: -1px 1px 25px black;
@@ -670,85 +568,70 @@ header .header-in img:hover {
 }
 
 /*==========Icons==========*/
-/* line 322, ../sass/screen.scss */
 .iconic {
   font-family: 'IconicStroke';
   font-size: 5em;
 }
 
-/* line 326, ../sass/screen.scss */
 .house:before {
   content: '\2302 \2302 \2302 \2302 \2302';
 }
 
-/* line 330, ../sass/screen.scss */
 .arrow-d:after {
   content: '\2193';
   margin-left: 23px;
 }
 
-/* line 338, ../sass/screen.scss */
 .content-wrap, header {
   moz-box-shadow: 0px 3px 6px black;
   -webkit-box-shadow: 0px 3px 6px black;
   box-shadow: 0px 3px 6px black;
 }
 
-/* line 344, ../sass/screen.scss */
 .content {
   padding: 15px 0;
   line-height: 25px;
   float: left;
   background-position: fixed;
 }
-/* line 351, ../sass/screen.scss */
 .content div p {
   padding: 10px;
 }
-/* line 359, ../sass/screen.scss */
 .content .century21 p {
   background-color: rgba(255, 255, 255, 0.4);
   background: rgba(255, 255, 255, 0.4);
 }
-/* line 364, ../sass/screen.scss */
 .content .century21 h2 {
   text-shadow: 1px 1px 6px black;
 }
 
-/* line 370, ../sass/screen.scss */
 .FAQ .question {
   font-family: sans-serif;
   font-weight: 800;
   margin-bottom: 0;
   font-size: 1.75em;
 }
-/* line 376, ../sass/screen.scss */
 .FAQ p {
   margin-top: 5px;
 }
 
-/* line 382, ../sass/screen.scss */
 .why h1 {
   text-transform: capitalize;
 }
 
-/* line 387, ../sass/screen.scss */
 .team {
   float: left;
   display: none;
 }
 
-/* line 393, ../sass/screen.scss */
 aside.team-member {
   width: auto !important;
 }
 
-/* line 397, ../sass/screen.scss */
 .team-member {
   padding: 10px;
   margin-bottom: 15px;
 }
-/* line 402, ../sass/screen.scss */
 .team-member img {
   height: 240px;
   width: 240px;
@@ -764,79 +647,63 @@ aside.team-member {
   -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-/* line 417, ../sass/screen.scss */
 .mailform, #thankyou {
   background: url("/images/px_by_Gre3g.png");
 }
 
-/* line 420, ../sass/screen.scss */
 #thankyou {
   height: 100%;
   color: #00b9f3;
   font-family: "Raleway" sans-serif;
 }
-/* line 425, ../sass/screen.scss */
 #thankyou #thanks-text {
   padding-top: 75px;
   text-align: center;
 }
-/* line 428, ../sass/screen.scss */
 #thankyou #thanks-text h1 {
   margin: 0;
   font-size: 5em;
 }
-/* line 432, ../sass/screen.scss */
 #thankyou #thanks-text h2 {
   font-size: 3em;
 }
-/* line 436, ../sass/screen.scss */
 #thankyou #thanks-text a {
   color: white;
 }
 
-/* line 441, ../sass/screen.scss */
 .mailform {
   padding: 0 5% 1%;
 }
-/* line 443, ../sass/screen.scss */
 .mailform span, .mailform label, .mailform h2 {
   color: #00b9f3;
   text-align: left !important;
 }
-/* line 447, ../sass/screen.scss */
 .mailform span {
   font-size: 3em;
 }
-/* line 451, ../sass/screen.scss */
 .mailform label {
   font-size: 2em;
 }
-/* line 455, ../sass/screen.scss */
 .mailform input, .mailform textarea {
   border-radius: 5px;
   margin-bottom: 15px;
 }
-/* line 460, ../sass/screen.scss */
 .mailform p:last-child {
   margin: 5px 0 0;
 }
-/* line 464, ../sass/screen.scss */
 .mailform textarea {
   height: 100px;
   width: 400px;
   resize: none;
   display: block;
 }
-/* line 471, ../sass/screen.scss */
 .mailform table {
   width: 100%;
 }
-/* line 474, ../sass/screen.scss */
 .mailform table td {
   padding: 0 15px;
   width: 33.33333%;
 }
-/* line 481, ../sass/screen.scss */
 .mailform .send-button {
   font-size: 2em;
   color: #00b9f3;
@@ -847,31 +714,26 @@ aside.team-member {
   border: none;
   border-radius: 5px;
 }
-/* line 491, ../sass/screen.scss */
 .mailform .send-button:hover {
   background: #00b9f3;
   color: white;
 }
 
-/* line 498, ../sass/screen.scss */
 .foot {
   font-size: 1.2em;
   text-align: center;
   background: url("/images/px_by_Gre3g.png");
   color: #00b9f3;
 }
-/* line 505, ../sass/screen.scss */
 .foot p {
   margin-top: 0;
 }
 
-/* line 510, ../sass/screen.scss */
 .clear-fix {
   clear: both;
 }
 
 /* ribbon style */
-/* line 515, ../sass/screen.scss */
 .ribbon-wrapper {
   position: relative;
   border-bottom: 0px solid #cccccc;
@@ -881,7 +743,6 @@ aside.team-member {
   -webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
 }
 
-/* line 523, ../sass/screen.scss */
 .ribbon-front {
   background-color: #00B9F3;
   height: 40px;
@@ -891,14 +752,12 @@ aside.team-member {
   z-index: 2;
   padding-top: 5px;
 }
-/* line 530, ../sass/screen.scss */
 .ribbon-front a {
   color: white;
   text-decoration: none;
   font-size: 2em;
 }
 
-/* line 540, ../sass/screen.scss */
 .ribbon-front,
 .ribbon-back-left,
 .ribbon-back-right {
@@ -908,7 +767,6 @@ aside.team-member {
   -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
-/* line 550, ../sass/screen.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-topright,
 .ribbon-edge-bottomleft,
@@ -920,49 +778,41 @@ aside.team-member {
   width: 0px;
 }
 
-/* line 563, ../sass/screen.scss */
 .ribbon-edge-bottomleft,
 .ribbon-edge-bottomright {
   top: 40px;
 }
 
-/* line 568, ../sass/screen.scss */
 .ribbon-edge-topleft,
 .ribbon-edge-bottomleft {
   left: -10px;
   border-color: transparent #00b9f3 transparent transparent;
 }
 
-/* line 573, ../sass/screen.scss */
 .ribbon-edge-topleft {
   top: -10px;
   border-width: 10px 10px 0 0;
 }
 
-/* line 577, ../sass/screen.scss */
 .ribbon-edge-bottomleft {
   border-width: 0 10px 0px 0;
 }
 
-/* line 582, ../sass/screen.scss */
 .ribbon-edge-topright,
 .ribbon-edge-bottomright {
   left: 100px;
   border-color: transparent transparent transparent #00b9f3;
 }
 
-/* line 587, ../sass/screen.scss */
 .ribbon-edge-topright {
   top: 0px;
   border-width: 0px 0 0 0px;
 }
 
-/* line 591, ../sass/screen.scss */
 .ribbon-edge-bottomright {
   border-width: 0 0 0px 0px;
 }
 
-/* line 595, ../sass/screen.scss */
 .ribbon-back-left {
   position: absolute;
   top: -10px;
@@ -973,7 +823,6 @@ aside.team-member {
   z-index: 0;
 }
 
-/* line 604, ../sass/screen.scss */
 .ribbon-back-right {
   position: absolute;
   top: 0px;
@@ -985,7 +834,6 @@ aside.team-member {
 }
 
 /* ribbon style */
-/* line 617, ../sass/screen.scss */
 .ribbon-wrapper-h {
   position: relative;
   border-bottom: 0px solid #cccccc;
@@ -995,7 +843,6 @@ aside.team-member {
   -webkit-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
 }
 
-/* line 626, ../sass/screen.scss */
 .ribbon-front-h {
   background-color: #cf5328;
   height: 40px;
@@ -1005,14 +852,12 @@ aside.team-member {
   left: -10px;
   z-index: 2;
 }
-/* line 633, ../sass/screen.scss */
 .ribbon-front-h a {
   color: white;
   text-decoration: none;
   font-size: 1.75em;
 }
 
-/* line 643, ../sass/screen.scss */
 .ribbon-front,
 .ribbon-back-left-h,
 .ribbon-back-right {
@@ -1022,7 +867,6 @@ aside.team-member {
   -o-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.55);
 }
 
-/* line 653, ../sass/screen.scss */
 .ribbon-edge-topleft-h,
 .ribbon-edge-topright,
 .ribbon-edge-bottomleft-h,
@@ -1034,49 +878,41 @@ aside.team-member {
   width: 0px;
 }
 
-/* line 666, ../sass/screen.scss */
 .ribbon-edge-bottomleft-h,
 .ribbon-edge-bottomright {
   top: 40px;
 }
 
-/* line 671, ../sass/screen.scss */
 .ribbon-edge-topleft-h,
 .ribbon-edge-bottomleft {
   left: -10px;
   border-color: transparent #cf5328 transparent transparent;
 }
 
-/* line 676, ../sass/screen.scss */
 .ribbon-edge-topleft-h {
   top: -10px;
   border-width: 10px 10px 0 0;
 }
 
-/* line 680, ../sass/screen.scss */
 .ribbon-edge-bottomleft-h {
   border-width: 0 10px 0px 0;
 }
 
-/* line 685, ../sass/screen.scss */
 .ribbon-edge-topright,
 .ribbon-edge-bottomright {
   left: 100px;
   border-color: transparent transparent transparent #cf5328;
 }
 
-/* line 690, ../sass/screen.scss */
 .ribbon-edge-topright {
   top: 0px;
   border-width: 0px 0 0 0px;
 }
 
-/* line 694, ../sass/screen.scss */
 .ribbon-edge-bottomright {
   border-width: 0 0 0px 0px;
 }
 
-/* line 698, ../sass/screen.scss */
 .ribbon-back-left-h {
   position: absolute;
   top: -10px;
@@ -1087,7 +923,6 @@ aside.team-member {
   z-index: 0;
 }
 
-/* line 707, ../sass/screen.scss */
 .ribbon-back-right {
   position: absolute;
   top: 0px;
