@@ -14,7 +14,7 @@ html {
   font-size: 16px;
 }
 
-p {
+p, li {
   font-size: 2.2em;
   line-height: 35px;
 }
@@ -682,11 +682,18 @@ aside.team-member {
   font-size: 3em;
 }
 .mailform label {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 .mailform input, .mailform textarea {
   border-radius: 5px;
   margin-bottom: 15px;
+  font-size: 1.5em;
+}
+.mailform #submit {
+  font-size: 3.5em;
+}
+.mailform select {
+  font-size: 2em;
 }
 .mailform p:last-child {
   margin: 5px 0 0;

@@ -41,7 +41,7 @@ html {
 	font-size: 16px;
 }
 
-p {
+p, li {
 	font-size: 2.2em;
 	line-height: 35px;
 }
@@ -449,12 +449,21 @@ aside.team-member {
 	}
 
 	label {
-		font-size: 2em;
+		font-size: 2.5em;
 	}
 
 	input, textarea {
 		border-radius: 5px;
 		margin-bottom: 15px;
+		font-size: 1.5em;
+	}
+
+	#submit {
+		font-size: 3.5em;
+	}
+
+	select {
+		font-size: 2em
 	}
 
 	p:last-child {
