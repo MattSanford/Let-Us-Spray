@@ -14,7 +14,11 @@ html {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 p, li, a {
+=======
+p, li {
+>>>>>>> 224ee60a7bd178a14d64bf9ff33456408fce0a8a
   font-size: 2.2em;
   line-height: 35px;
 }
@@ -619,8 +623,16 @@ aside.team-member {
   margin-bottom: 15px;
   font-size: 1.5em;
 }
+<<<<<<< HEAD
 .mailform select {
   font-size: 1.5em;
+=======
+.mailform #submit {
+  font-size: 3.5em;
+}
+.mailform select {
+  font-size: 2em;
+>>>>>>> 224ee60a7bd178a14d64bf9ff33456408fce0a8a
 }
 .mailform p:last-child {
   margin: 5px 0 0;
