@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -17,12 +18,14 @@
 	<meta property="og:url" content="http://letusspraysoftwash.com" />
 	<meta property="og:site_name" content="Let Us Spray Softwash"/>
 	<meta property="og:description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!"/>	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
-	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 	<link href="/stylesheets/flexslider.css" rel="stylesheet">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">	
 	<script type="text/javascript" src="/js/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 	<script src="/js/modernizr.custom.38132.js"></script>
 	<script type="text/javascript" src="/js/html5shiv.js"></script>
 
@@ -31,6 +34,20 @@
     $('.flexslider').flexslider();
   });
 </script>
+  <script type="text/javascript">
+
+  if (document.documentElement.clientWidth < 900) {
+
+	  $(document).ready(function(){  
+  	$( ".bg-header" ).siblings().hide("drop", "slow");
+  	$(".bg-header").append("<br><span class='show-hide'> Click To Show</span>");
+  	$(".bg-header").click(function(){
+		$(this).siblings().show("slow");
+		$(".show-hide",this).remove();
+  	});
+});
+}
+  </script>
 </head>
 <body>
 	<div class="container">
@@ -83,8 +100,8 @@
 		<div class="ribbon-back-left-h"></div>
 		<div class="ribbon-back-right"></div>
 	</div>
-					<div class="welcome" id="first">
-						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1>
+					<div class="welcome" class="accordion">
+						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="icon-side">
 							<span class="iconic house"></span>
 							<span>X 10,000</span>
@@ -95,13 +112,13 @@
 						
 							<div class="clear-fix"></div>
 					</div>
-					<div class="century21" id="second">
-						<h2 class="bg-header">SoftWashing - 21st Century Technology</h2>
+					<div class="century21" class="accordion">
+						<h2 class="bg-header">SoftWashing - 21st Century Technology</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
 						<div class="icon-side">
 							<span class="block-icon">$$$</span>
-							<span class="iconic arrow-d"></span>
+							<span class="iconic arrow_down"></span>
 							<span class="block-icon">$</span>		
 						</div>						
 							<p>The power of chemistry is what makes our Soft-wash process so effective. Different surfaces and different contaminants require different levels of "soft washing". With each cleaning job we perform, our cleaning solution is custom mixed on site and applied. We do not have a "one size fits all" approach to cleaning. We will customize a cleaning plan to maximize effectiveness while also keeping your cost as low as possible!</p>
@@ -110,8 +127,8 @@
 						
 							<div class="clear-fix"></div>		
 					</div>
-					<div class="about" id="third">
-						<h2 class="bg-header" id="about">About Us</h2>
+					<div class="about" class="accordion">
+						<h2 class="bg-header" id="about">About Us</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
 							<script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
@@ -126,14 +143,14 @@ google_ad_height = 240;
 						<p>We follow all industry accepted non-pressure/soft washing standards and recommended procedures by SoftWash Systems, ARMA (Asphalt Roof Manufacturers Association), and RCIA (Roof Cleaning Institute of America). Our specially blended cleaning solutions are biodegradable and exclusive to SoftWash Systems.</p>
 						<div class="icon-side bb">
 							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><div id="bb-wrap"></div></a>
-							<h4>Click the Image!</h4>
+							
 						</div>	
 						<p>Providing for both residential and light commercial clients, we are fully insured, licensed, rated A+ with the Richmond BBB, and a Certified Member of SoftWash Systems.</p></div>
 						<div class="clear-fix"></div>		
 					
 					</div>
-					<div class="technology" id="fourth">
-						<h2 class="bg-header" id="technology">The Unique Soft Wash System</h2>
+					<div class="technology" class="accordion">
+						<h2 class="bg-header" id="technology">The Unique Soft Wash System</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><p>Dark stains on your roof are caused primarily by a persistent type of algae, Gloeocapsa Magma. The SoftWash System gently removes the staining without harming the roof itself.  AND it kills the algae and other harmful organisms so the stains don't come back!</p>
 						<ol>
 							<li>The microorganisms that cause roof staining actually have tiny root systems which physically break down asphalt and composite roof shingles, allowing larger types of organisms to grow on your roof. The SoftWash System kills these roots and applies an algaecide and fungicide to protect against future attacks.</li>
@@ -145,8 +162,8 @@ google_ad_height = 240;
 						</ol></div>
 						
 					</div>
-					<div class="FAQ" id="fifth">
-						<h2 class="bg-header">FAQ's</h2>
+					<div class="FAQ" class="accordion">
+						<h2 class="bg-header">FAQ's</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><span class="question">"What causes the black marks on my roof?"</span>
 						<p>Most roof stains are caused by the growth of algae, lichen colonies or moss that feed on organic matter frequently found on roof surfaces. The portions of a roof that receive the least amount of sunlight are more likely to have roof stains first. This explains why some homes may have roof stains only on one side of the roof, typically the northern and/or western exposure or in heavily shaded areas.</p>
 						<span class="question">"Are you going to pressure wash my roof?"</span>
@@ -161,7 +178,7 @@ google_ad_height = 240;
 						<p>If used improperly there can be some damage to vegetation. That is also why we like to ask all of our customers to water their plants heavily the night before and just after treatment.  In most cases you will not notice any damage to your plants.  In a very few cases there could be a light browning in a few areas that will go away quickly.</p></div>
 						
 					</div>
-					<div class="why" id="sixth">
+					<div class="why" class="accordion"><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<h2 class="bg-header">Why should I have my roof cleaned?</h2>
 							<div><h1>top 10 reasons to have your roof cleaned</h1>
 							<ol>
@@ -177,7 +194,7 @@ google_ad_height = 240;
 								<li>Our team is Softwash Systems certified!</li>
 							</ol></div>
 					</div>
-				</div>
+			</div>
 				<section class="team content">
 					<h1 class="bg-header">Meet The Team!</h1>
 					<div class="team-member content">
@@ -192,8 +209,8 @@ google_ad_height = 240;
 					</div>
 				</section>
 				<div class="mailform">
-					<span>Contact Us!</span>
-					<?php include('contact.php'); ?>
+					<span id="after">Contact Us!</span>
+					<?php require_once('contact.php');?>
 				<div class="clear-fix"></div>
 			</div>
 			<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy</p></footer>
@@ -201,28 +218,6 @@ google_ad_height = 240;
 	</div>	
 </div>
 	<script src="/js/animations.js"></script>
-
-
 	<script src="/js/analytics.js"></script>
-	<script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
-	<script type="text/javascript">
-
-			$(function() {
-				$('#first').collapsible('accordion-open', {
-				});
-				$('#second').collapsible('accordion-open', {
-				});
-				$('#third').collapsible('accordion-open', {
-				});
-				$('#fourth').collapsible('accordion-open', {
-				});
-				$('#fifth').collapsible('accordion-open', {
-				});
-				$('#sixth').collapsible('accordion-open', {
-					contentOpen: 1
-				});
-			});
-		
-	</script>
 </body>
 </html>
