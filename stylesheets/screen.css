@@ -14,11 +14,7 @@ html {
   font-size: 16px;
 }
 
-<<<<<<< HEAD
-p, li, a {
-=======
 p, li {
->>>>>>> 224ee60a7bd178a14d64bf9ff33456408fce0a8a
   font-size: 2.2em;
   line-height: 35px;
 }
@@ -41,7 +37,7 @@ body {
   background: -ms-linear-gradient(top, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
   background: linear-gradient(to bottom, #02b5f1 0%, #47c5ef 50%, #7ad2ef 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#02b5f1', endColorstr='#7ad2ef',GradientType=0 );
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   width: 100%;
   background-position: fixed;
 }
@@ -80,11 +76,11 @@ header .header-in {
 header .header-in img {
   margin: 0 auto;
   display: block;
-  -webkit-animation: slideup .2s;
+  -webkit-animation: slideup 0.2s;
 }
 header .header-in img:hover {
   margin-top: 5px;
-  -webkit-animation: slidedown1 .2s;
+  -webkit-animation: slidedown1 0.2s;
 }
 
 .appear {
@@ -92,7 +88,7 @@ header .header-in img:hover {
   margin-right: 100px;
 }
 .appear:hover {
-  -webkit-animation: slidedown .2s;
+  -webkit-animation: slidedown 0.2s;
 }
 
 @-moz-keyframes slidedown {
@@ -269,9 +265,9 @@ header .header-in img:hover {
   width: 100%;
 }
 #main, #main .badges {
-  -moz-box-shadow: inset 0px 1px 6px #000000;
-  -webkit-box-shadow: inset 0px 1px 6px #000000;
-  box-shadow: inset 0px 1px 6px #000000;
+  -moz-box-shadow: inset 0px 1px 6px black;
+  -webkit-box-shadow: inset 0px 1px 6px black;
+  box-shadow: inset 0px 1px 6px black;
 }
 #main .bg-header {
   background: url("/images/black_twill.png");
@@ -283,6 +279,7 @@ header .header-in img:hover {
   background: none;
   margin: 0;
   color: black;
+  text-align: center;
 }
 #main .show-hide {
   color: #00B9F3;
@@ -294,11 +291,11 @@ header .header-in img:hover {
   -moz-box-shadow: 0px -36px 60px #cf5228;
   -webkit-box-shadow: 0px -36px 60px #cf5228;
   box-shadow: 0px -36px 60px #cf5228;
-  -webkit-animation: rust .9s;
+  -webkit-animation: rust 0.9s;
   text-decoration: underline;
 }
 #main #rusty-box:hover {
-  -webkit-animation: norust .9s;
+  -webkit-animation: norust 0.9s;
   box-shadow: none;
 }
 #main .badges {
@@ -515,9 +512,9 @@ header .header-in img:hover {
 }
 
 .content-wrap, header {
-  moz-box-shadow: 0px 3px 6px #000000;
-  -webkit-box-shadow: 0px 3px 6px #000000;
-  box-shadow: 0px 3px 6px #000000;
+  moz-box-shadow: 0px 3px 6px black;
+  -webkit-box-shadow: 0px 3px 6px black;
+  box-shadow: 0px 3px 6px black;
 }
 
 .content {
@@ -535,7 +532,7 @@ header .header-in img:hover {
   background: rgba(255, 255, 255, 0.4);
 }
 .content .century21 h2 {
-  text-shadow: 1px 1px 6px #000000;
+  text-shadow: 1px 1px 6px black;
 }
 
 .FAQ .question {
@@ -588,7 +585,7 @@ aside.team-member {
 #thankyou {
   height: 100%;
   color: #00b9f3;
-  font-family: 'Raleway' sans-serif;
+  font-family: "Raleway" sans-serif;
 }
 #thankyou #thanks-text {
   padding-top: 75px;
@@ -623,16 +620,11 @@ aside.team-member {
   margin-bottom: 15px;
   font-size: 1.5em;
 }
-<<<<<<< HEAD
-.mailform select {
-  font-size: 1.5em;
-=======
 .mailform #submit {
   font-size: 3.5em;
 }
 .mailform select {
   font-size: 2em;
->>>>>>> 224ee60a7bd178a14d64bf9ff33456408fce0a8a
 }
 .mailform p:last-child {
   margin: 5px 0 0;
@@ -682,7 +674,7 @@ aside.team-member {
 /* ribbon style */
 .ribbon-wrapper {
   position: relative;
-  border-bottom: 0px solid #ccc;
+  border-bottom: 0px solid #cccccc;
   -moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
   -webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
   -moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
@@ -732,7 +724,7 @@ aside.team-member {
 .ribbon-edge-topleft,
 .ribbon-edge-bottomleft {
   left: -10px;
-  border-color: transparent #00B9F3 transparent transparent;
+  border-color: transparent #00b9f3 transparent transparent;
 }
 
 .ribbon-edge-topleft {
@@ -747,7 +739,7 @@ aside.team-member {
 .ribbon-edge-topright,
 .ribbon-edge-bottomright {
   left: 100px;
-  border-color: transparent transparent transparent #00B9F3;
+  border-color: transparent transparent transparent #00b9f3;
 }
 
 .ribbon-edge-topright {
@@ -782,7 +774,7 @@ aside.team-member {
 /* ribbon style */
 .ribbon-wrapper-h {
   position: relative;
-  border-bottom: 0px solid #ccc;
+  border-bottom: 0px solid #cccccc;
   -moz-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
   -webkit-border-bottom-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
   -moz-border-top-colors: rgba(0, 0, 0, 0.02) rgba(0, 0, 0, 0.04) rgba(0, 0, 0, 0.06) rgba(0, 0, 0, 0.08) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.12) rgba(0, 0, 0, 0.14) rgba(0, 0, 0, 0.16) rgba(0, 0, 0, 0.18) rgba(0, 0, 0, 0.2);
@@ -894,7 +886,7 @@ aside.team-member {
     position: relative;
     margin: 0 auto;
     display: block;
-    -webkit-animation: slideup .2s;
+    -webkit-animation: slideup 0.2s;
     height: 100px;
     z-index: 220;
   }
