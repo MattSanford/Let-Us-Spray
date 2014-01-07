@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset/utilities";
+@import "compass";
 @mixin reset-list-style {
   list-style: decimal;
 }
@@ -174,20 +175,26 @@ header {
 
 	.bg-header {
 		background: url('/images/black_twill.png');
-		padding: 15px;
+		padding: 15px 0 15px 15px;
 		color: #00b9f3;
 		font-size: 3em;
 
 
+
 		&.rust {
-			background: none;
 			margin: 0;
-			color: black;
+			display: block;
+			color: #CF5329;
+		}
+
+
+		&#rusty, &#rusty-box {
 			text-align: center;
 		}
 
-		&#rusty {
-		}
+	}
+	.rust-color {
+					color: #CF5329;
 
 	}
 	.show-hide {
@@ -198,16 +205,11 @@ header {
 	}
 
 			#rusty-box {
-		-moz-box-shadow: 0px -36px 60px #cf5228;
-		-webkit-box-shadow: 0px -36px 60px #cf5228;
-		box-shadow: 0px -36px 60px #cf5228;
-		-webkit-animation: rust .9s;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		-webkit-animation: rust 3s;
 		text-decoration: underline;
-
-		&:hover {
-			-webkit-animation: norust .9s;
-			box-shadow: none;
-		}
 		}
 
 
@@ -238,8 +240,41 @@ header {
 	.content-wrap {
 		width: 940px;
 		margin: 10px auto 15px;
+
+		p {
+			padding: 0 10px;
+		}
 	}
 
+
+}
+
+.mail {
+height: 230px;
+width: 520px;
+padding: 8px;
+margin: 15px auto;
+display: none;
+-moz-box-shadow: 0px 1px 13px #000000;
+-webkit-box-shadow: 0px 1px 13px #000000;
+box-shadow: 0px 1px 13px #000000;
+background-color: rgb(79,194,226); // Old browsers
+@include filter-gradient(#4fc2e2, #4fc2e2, horizontal); // IE6-8 fallback on horizontal gradient
+// IE9 SVG, needs conditional override of 'filter' to 'none'
+$experimental-support-for-svg: true;
+@include background-image(linear-gradient(left top,  rgba(79,194,226,1) 0%,rgba(79,194,226,1) 4%,rgba(255,255,255,1) 4%,rgba(255,255,255,1) 5%,rgba(255,255,255,1) 12%,rgba(247,46,50,1) 12%,rgba(247,46,50,1) 20%,rgba(255,255,255,1) 20%,rgba(255,255,255,1) 30%,rgba(79,194,226,1) 30%,rgba(79,194,226,1) 36%,rgba(255,255,255,1) 37%,rgba(255,255,255,1) 46%,rgba(247,46,50,1) 46%,rgba(247,46,50,1) 55%,rgba(255,255,255,1) 55%,rgba(255,255,255,1) 65%,rgba(79,194,226,1) 65%,rgba(79,194,226,1) 73%,rgba(255,255,255,1) 73%,rgba(255,255,255,1) 82%,rgba(247,46,50,1) 82%,rgba(247,46,50,1) 90%,rgba(255,255,255,1) 90%,rgba(255,255,255,1) 95%,rgba(79,194,226,1) 96%));
+
+	#mail-text {
+		background: url('/images/AirMail.png');
+		width: 100%;
+		height: 100%;
+
+		p {
+			margin: 0;
+			font-family: 'Shadows Into Light', cursive;
+
+		}
+	}
 
 }
 
@@ -247,15 +282,10 @@ header {
 		from {	
 		box-shadow: none;
 		}
-		to {
+		50% {
 		box-shadow: -1px -36px 60px #cf5228;
 		}
-	}
 
-	@include keyframes(norust) {
-		from {
-		box-shadow: -1px -36px 60px #cf5228;
-		}
 		to {
 		box-shadow:  none;
 		}
@@ -297,6 +327,13 @@ $slidepane: slidepane;
 .bb {
 	margin: 0 1% 0 2%;
 	height: 225px;
+}
+.f9 {
+	height: 200px;
+	width: 250px;
+}
+.icon-side.f9{
+	margin-top: 20px;
 }
 
 #bb-wrap {
@@ -434,10 +471,13 @@ aside.team-member {
 		}
 	}	
 }
+form {
+	margin-top: 15px;
+}
 .mailform {
 	padding: 0 5% 1%;;
 	span, label, h2 {
-		color: #00b9f3;
+		color: #00B9F3;
 		text-align: left !important;
 	}
 	span {
@@ -445,7 +485,7 @@ aside.team-member {
 	}
 
 	label {
-		font-size: 2.5em;
+		font-size: 24px;
 	}
 
 	input, textarea {
@@ -470,6 +510,7 @@ aside.team-member {
 	textarea {
 		height: 100px;
 		width: 400px;
+		margin-left: 15px;
 		resize: none;
 		display: block;
 	}
@@ -494,10 +535,6 @@ aside.team-member {
 		border: none;
 		border-radius: 5px;
 
-		&:hover {
-			background: #00b9f3;
-			color: white;
-		}
 	}
 }
 
@@ -533,10 +570,13 @@ aside.team-member {
 	left:-10px;
 	z-index: 2;
 	padding-top: 5px;
+	p {
+		margin: 0;
+		font-size: 2.5em;
+	}
 	a {
 		color: white;
 	text-decoration: none;
-		font-size: 2em;
 }
 }
 
@@ -631,16 +671,20 @@ aside.team-member {
 }
   .ribbon-front-h {
 	background-color: #cf5328;	height: 40px;
-	width: 380px;
+	width: 200px;
 	position: relative;
 	padding-top: 5px;
 	left:-10px;
 	z-index: 2;
+		p {
+		margin: 0;
+		font-size: 2.5em;
+	}
 		a {
 		color: white;
 	text-decoration: none;
-		font-size: 1.75em;
 }
+
 }
 
   .ribbon-front,

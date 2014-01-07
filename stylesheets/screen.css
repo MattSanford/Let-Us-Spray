@@ -271,15 +271,20 @@ header .header-in img:hover {
 }
 #main .bg-header {
   background: url("/images/black_twill.png");
-  padding: 15px;
+  padding: 15px 0 15px 15px;
   color: #00b9f3;
   font-size: 3em;
 }
 #main .bg-header.rust {
-  background: none;
   margin: 0;
-  color: black;
+  display: block;
+  color: #CF5329;
+}
+#main .bg-header#rusty, #main .bg-header#rusty-box {
   text-align: center;
+}
+#main .rust-color {
+  color: #CF5329;
 }
 #main .show-hide {
   color: #00B9F3;
@@ -288,15 +293,11 @@ header .header-in img:hover {
   font-size: .5em;
 }
 #main #rusty-box {
-  -moz-box-shadow: 0px -36px 60px #cf5228;
-  -webkit-box-shadow: 0px -36px 60px #cf5228;
-  box-shadow: 0px -36px 60px #cf5228;
-  -webkit-animation: rust 0.9s;
-  text-decoration: underline;
-}
-#main #rusty-box:hover {
-  -webkit-animation: norust 0.9s;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
+  -webkit-animation: rust 3s;
+  text-decoration: underline;
 }
 #main .badges {
   background: url("/images/grid.png");
@@ -323,14 +324,51 @@ header .header-in img:hover {
   width: 940px;
   margin: 10px auto 15px;
 }
+#main .content-wrap p {
+  padding: 0 10px;
+}
+
+.mail {
+  height: 230px;
+  width: 520px;
+  padding: 8px;
+  margin: 15px auto;
+  display: none;
+  -moz-box-shadow: 0px 1px 13px black;
+  -webkit-box-shadow: 0px 1px 13px black;
+  box-shadow: 0px 1px 13px black;
+  background-color: #4fc2e2;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=1, startColorstr='#FF4FC2E2', endColorstr='#FF4FC2E2');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmYzJlMiIvPjxzdG9wIG9mZnNldD0iNCUiIHN0b3AtY29sb3I9IiM0ZmMyZTIiLz48c3RvcCBvZmZzZXQ9IjQlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTIlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIxMiUiIHN0b3AtY29sb3I9IiNmNzJlMzIiLz48c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2Y3MmUzMiIvPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iIzRmYzJlMiIvPjxzdG9wIG9mZnNldD0iMzYlIiBzdG9wLWNvbG9yPSIjNGZjMmUyIi8+PHN0b3Agb2Zmc2V0PSIzNyUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNDYlIiBzdG9wLWNvbG9yPSIjZjcyZTMyIi8+PHN0b3Agb2Zmc2V0PSI1NSUiIHN0b3AtY29sb3I9IiNmNzJlMzIiLz48c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iNjUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI2NSUiIHN0b3AtY29sb3I9IiM0ZmMyZTIiLz48c3RvcCBvZmZzZXQ9IjczJSIgc3RvcC1jb2xvcj0iIzRmYzJlMiIvPjxzdG9wIG9mZnNldD0iNzMlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIi8+PHN0b3Agb2Zmc2V0PSI4MiUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9IjgyJSIgc3RvcC1jb2xvcj0iI2Y3MmUzMiIvPjxzdG9wIG9mZnNldD0iOTAlIiBzdG9wLWNvbG9yPSIjZjcyZTMyIi8+PHN0b3Agb2Zmc2V0PSI5MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiLz48c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iOTYlIiBzdG9wLWNvbG9yPSIjNGZjMmUyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #4fc2e2), color-stop(4%, #4fc2e2), color-stop(4%, #ffffff), color-stop(5%, #ffffff), color-stop(12%, #ffffff), color-stop(12%, #f72e32), color-stop(20%, #f72e32), color-stop(20%, #ffffff), color-stop(30%, #ffffff), color-stop(30%, #4fc2e2), color-stop(36%, #4fc2e2), color-stop(37%, #ffffff), color-stop(46%, #ffffff), color-stop(46%, #f72e32), color-stop(55%, #f72e32), color-stop(55%, #ffffff), color-stop(65%, #ffffff), color-stop(65%, #4fc2e2), color-stop(73%, #4fc2e2), color-stop(73%, #ffffff), color-stop(82%, #ffffff), color-stop(82%, #f72e32), color-stop(90%, #f72e32), color-stop(90%, #ffffff), color-stop(95%, #ffffff), color-stop(96%, #4fc2e2));
+  background-image: -webkit-linear-gradient(left top, #4fc2e2 0%, #4fc2e2 4%, #ffffff 4%, #ffffff 5%, #ffffff 12%, #f72e32 12%, #f72e32 20%, #ffffff 20%, #ffffff 30%, #4fc2e2 30%, #4fc2e2 36%, #ffffff 37%, #ffffff 46%, #f72e32 46%, #f72e32 55%, #ffffff 55%, #ffffff 65%, #4fc2e2 65%, #4fc2e2 73%, #ffffff 73%, #ffffff 82%, #f72e32 82%, #f72e32 90%, #ffffff 90%, #ffffff 95%, #4fc2e2 96%);
+  background-image: -moz-linear-gradient(left top, #4fc2e2 0%, #4fc2e2 4%, #ffffff 4%, #ffffff 5%, #ffffff 12%, #f72e32 12%, #f72e32 20%, #ffffff 20%, #ffffff 30%, #4fc2e2 30%, #4fc2e2 36%, #ffffff 37%, #ffffff 46%, #f72e32 46%, #f72e32 55%, #ffffff 55%, #ffffff 65%, #4fc2e2 65%, #4fc2e2 73%, #ffffff 73%, #ffffff 82%, #f72e32 82%, #f72e32 90%, #ffffff 90%, #ffffff 95%, #4fc2e2 96%);
+  background-image: -o-linear-gradient(left top, #4fc2e2 0%, #4fc2e2 4%, #ffffff 4%, #ffffff 5%, #ffffff 12%, #f72e32 12%, #f72e32 20%, #ffffff 20%, #ffffff 30%, #4fc2e2 30%, #4fc2e2 36%, #ffffff 37%, #ffffff 46%, #f72e32 46%, #f72e32 55%, #ffffff 55%, #ffffff 65%, #4fc2e2 65%, #4fc2e2 73%, #ffffff 73%, #ffffff 82%, #f72e32 82%, #f72e32 90%, #ffffff 90%, #ffffff 95%, #4fc2e2 96%);
+  background-image: linear-gradient(left top, #4fc2e2 0%, #4fc2e2 4%, #ffffff 4%, #ffffff 5%, #ffffff 12%, #f72e32 12%, #f72e32 20%, #ffffff 20%, #ffffff 30%, #4fc2e2 30%, #4fc2e2 36%, #ffffff 37%, #ffffff 46%, #f72e32 46%, #f72e32 55%, #ffffff 55%, #ffffff 65%, #4fc2e2 65%, #4fc2e2 73%, #ffffff 73%, #ffffff 82%, #f72e32 82%, #f72e32 90%, #ffffff 90%, #ffffff 95%, #4fc2e2 96%);
+}
+.mail #mail-text {
+  background: url("/images/AirMail.png");
+  width: 100%;
+  height: 100%;
+}
+.mail #mail-text p {
+  margin: 0;
+  font-family: "Shadows Into Light", cursive;
+}
 
 @-moz-keyframes rust {
   from {
     box-shadow: none;
   }
 
-  to {
+  50% {
     box-shadow: -1px -36px 60px #cf5228;
+  }
+
+  to {
+    box-shadow: none;
   }
 }
 
@@ -339,8 +377,12 @@ header .header-in img:hover {
     box-shadow: none;
   }
 
-  to {
+  50% {
     box-shadow: -1px -36px 60px #cf5228;
+  }
+
+  to {
+    box-shadow: none;
   }
 }
 
@@ -349,8 +391,12 @@ header .header-in img:hover {
     box-shadow: none;
   }
 
-  to {
+  50% {
     box-shadow: -1px -36px 60px #cf5228;
+  }
+
+  to {
+    box-shadow: none;
   }
 }
 
@@ -359,43 +405,7 @@ header .header-in img:hover {
     box-shadow: none;
   }
 
-  to {
-    box-shadow: -1px -36px 60px #cf5228;
-  }
-}
-
-@-moz-keyframes norust {
-  from {
-    box-shadow: -1px -36px 60px #cf5228;
-  }
-
-  to {
-    box-shadow: none;
-  }
-}
-
-@-webkit-keyframes norust {
-  from {
-    box-shadow: -1px -36px 60px #cf5228;
-  }
-
-  to {
-    box-shadow: none;
-  }
-}
-
-@-o-keyframes norust {
-  from {
-    box-shadow: -1px -36px 60px #cf5228;
-  }
-
-  to {
-    box-shadow: none;
-  }
-}
-
-@keyframes norust {
-  from {
+  50% {
     box-shadow: -1px -36px 60px #cf5228;
   }
 
@@ -482,6 +492,15 @@ header .header-in img:hover {
 .bb {
   margin: 0 1% 0 2%;
   height: 225px;
+}
+
+.f9 {
+  height: 200px;
+  width: 250px;
+}
+
+.icon-side.f9 {
+  margin-top: 20px;
 }
 
 #bb-wrap {
@@ -602,18 +621,22 @@ aside.team-member {
   color: white;
 }
 
+form {
+  margin-top: 15px;
+}
+
 .mailform {
   padding: 0 5% 1%;
 }
 .mailform span, .mailform label, .mailform h2 {
-  color: #00b9f3;
+  color: #00B9F3;
   text-align: left !important;
 }
 .mailform span {
   font-size: 3em;
 }
 .mailform label {
-  font-size: 2.5em;
+  font-size: 24px;
 }
 .mailform input, .mailform textarea {
   border-radius: 5px;
@@ -632,6 +655,7 @@ aside.team-member {
 .mailform textarea {
   height: 100px;
   width: 400px;
+  margin-left: 15px;
   resize: none;
   display: block;
 }
@@ -651,10 +675,6 @@ aside.team-member {
   margin-top: 15px;
   border: none;
   border-radius: 5px;
-}
-.mailform .send-button:hover {
-  background: #00b9f3;
-  color: white;
 }
 
 .foot {
@@ -690,10 +710,13 @@ aside.team-member {
   z-index: 2;
   padding-top: 5px;
 }
+.ribbon-front p {
+  margin: 0;
+  font-size: 2.5em;
+}
 .ribbon-front a {
   color: white;
   text-decoration: none;
-  font-size: 2em;
 }
 
 .ribbon-front,
@@ -784,16 +807,19 @@ aside.team-member {
 .ribbon-front-h {
   background-color: #cf5328;
   height: 40px;
-  width: 380px;
+  width: 200px;
   position: relative;
   padding-top: 5px;
   left: -10px;
   z-index: 2;
 }
+.ribbon-front-h p {
+  margin: 0;
+  font-size: 2.5em;
+}
 .ribbon-front-h a {
   color: white;
   text-decoration: none;
-  font-size: 1.75em;
 }
 
 .ribbon-front,

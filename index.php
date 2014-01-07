@@ -91,7 +91,7 @@
 				<div class="content">
 								<div class="ribbon-wrapper-h">
 			<div class="ribbon-front-h">
-				<a href="#">Rust Removal (coming soon)</a>
+				<p><a href="/rust-removal">Rust Removal</a></p>
 			</div>
 		<div class="ribbon-edge-topleft-h"></div>
 		<div class="ribbon-edge-topright"></div>
