@@ -19,7 +19,7 @@
 	<meta property="og:site_name" content="Let Us Spray Softwash"/>
 	<meta property="og:description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!"/>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
 	<link href="/stylesheets/flexslider.css" rel="stylesheet">
 	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">	

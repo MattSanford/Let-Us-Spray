@@ -1,4 +1,4 @@
-<form action="database.php" method="post" id="contact">
+<form action="/webformmailer.php" method="post" id="contact">
 	<table>
 		<tbody>
 			<tr>
@@ -42,6 +42,4 @@
 
 	<input type="submit" id="submit" class="send-button">
 	
-<script src="/js/ajax.js"></script>
-
 </form>
