@@ -70,7 +70,6 @@ audio:not([controls]) {
  */
 
 html {
-    font-size: 100%; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
 }
@@ -138,7 +137,7 @@ h2 {
     margin: 0.45em 0;
 }
 
-h3, label {
+h3 {
     font-size: 1.5em;
     margin: 0.45em 0;
 }

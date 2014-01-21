@@ -6,6 +6,7 @@
 <!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
     <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Let Us Spray Softwash</title>
@@ -101,17 +102,7 @@
 				</section>
 			<div class="content-wrap"> 
 				<div class="content">
-								<div class="ribbon-wrapper-h">
-			<div class="ribbon-front-h">
-				<p><a href="/rust-removal">Rust Removal</a></p>
-			</div>
-		<div class="ribbon-edge-topleft-h"></div>
-		<div class="ribbon-edge-topright"></div>
-		<div class="ribbon-edge-bottomleft-h"></div>
-		<div class="ribbon-edge-bottomright"></div>
-		<div class="ribbon-back-left-h"></div>
-		<div class="ribbon-back-right"></div>
-	</div>
+					<nav class="nav"><a href="/rust-removal" class="rust-link">Rust-Removal</a></nav>
 					<div class="welcome" class="accordion">
 						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="icon-side">
@@ -221,7 +212,7 @@ google_ad_height = 240;
 					</div>
 				</section>
 				<div class="mailform">
-					<span id="after">Contact Us!</span>
+					<h2>Contact Us!</h2>
 					<?php require_once('contact.php');?>
 				<div class="clear-fix"></div>
 			</div>
