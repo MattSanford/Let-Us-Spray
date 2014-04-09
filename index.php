@@ -6,6 +6,7 @@
 <!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
     <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Let Us Spray Softwash</title>
@@ -113,6 +114,7 @@
 		<div class="ribbon-back-right"></div>
 	</div>
 					<div class="welcome accordion">
+
 						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="icon-side">
 							<span class="iconic house"></span>
