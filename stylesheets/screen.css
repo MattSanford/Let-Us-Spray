@@ -85,99 +85,8 @@ header .header-in img:hover {
 }
 
 .appear {
-  float: right;
-  margin-right: 100px;
-}
-.appear:hover {
-  -webkit-animation: slidedown 0.2s;
-}
-
-@-moz-keyframes slidedown {
-  from {
-    margin-top: 0px;
-  }
-
-  25% {
-    margin-top: 5px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-
-  75% {
-    margin-top: 5px;
-  }
-
-  to {
-    margin-top: 0px;
-  }
-}
-
-@-webkit-keyframes slidedown {
-  from {
-    margin-top: 0px;
-  }
-
-  25% {
-    margin-top: 5px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-
-  75% {
-    margin-top: 5px;
-  }
-
-  to {
-    margin-top: 0px;
-  }
-}
-
-@-o-keyframes slidedown {
-  from {
-    margin-top: 0px;
-  }
-
-  25% {
-    margin-top: 5px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-
-  75% {
-    margin-top: 5px;
-  }
-
-  to {
-    margin-top: 0px;
-  }
-}
-
-@keyframes slidedown {
-  from {
-    margin-top: 0px;
-  }
-
-  25% {
-    margin-top: 5px;
-  }
-
-  50% {
-    margin-top: 0px;
-  }
-
-  75% {
-    margin-top: 5px;
-  }
-
-  to {
-    margin-top: 0px;
-  }
+  float: left;
+  margin: 25px 0;
 }
 
 @-moz-keyframes slideup {
@@ -626,21 +535,46 @@ form {
   margin-top: 15px;
 }
 
+.after {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  padding: 0 15px;
+}
+
 .mailform {
   padding: 0 5% 1%;
 }
 .mailform span, .mailform label, .mailform h2 {
   color: #00B9F3;
-  text-align: left !important;
 }
-.mailform span {
-  font-size: 3em;
+.mailform .f-name, .mailform .l-name, .mailform .address, .mailform .email, .mailform .city, .mailform .zip, .mailform .submit {
+  float: left;
+  display: block;
+  margin: 10px 50px;
+}
+.mailform .message, .mailform .job {
+  margin: 10px 50px;
+}
+.mailform .third {
+  width: 600px;
+  margin: 0 auto;
+}
+.mailform .third.bottom {
+  width: 600px;
+}
+.mailform .submit {
+  margin: 0 auto;
+  display: block;
+  float: none;
+  width: 200px;
 }
 .mailform label {
   font-size: 24px;
 }
 .mailform input, .mailform textarea {
   border-radius: 5px;
+  display: block;
   margin-bottom: 15px;
   font-size: 1.5em;
 }
@@ -649,14 +583,14 @@ form {
 }
 .mailform select {
   font-size: 2em;
+  display: block;
 }
 .mailform p:last-child {
   margin: 5px 0 0;
 }
 .mailform textarea {
   height: 100px;
-  width: 400px;
-  margin-left: 15px;
+  width: 300px;
   resize: none;
   display: block;
 }
@@ -667,15 +601,43 @@ form {
   padding: 0 15px;
   width: 33.33333%;
 }
+.mailform #req-field-desc {
+  font-style: italic;
+  margin-top: 15px;
+  color: #00B9F3;
+}
+.mailform .required {
+  font-size: 2em;
+  font-weight: bold;
+  color: red !important;
+}
+.mailform #errors {
+  display: none;
+}
+.mailform #errors li {
+  list-style: none;
+}
+.mailform #errors li:before {
+  content: '-';
+}
+.mailform #errors #errors {
+  font-weight: bold;
+}
+.mailform #success {
+  display: none;
+}
+.mailform #errors.visible, .mailform #success.visible {
+  display: block;
+}
 .mailform .send-button {
   font-size: 2em;
   color: #00b9f3;
-  background: white;
+  background: #dddddd;
   font-family: 'Raleway';
   padding: 10px;
-  margin-top: 15px;
+  margin: 15px auto;
   border: none;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .foot {

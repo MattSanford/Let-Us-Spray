@@ -116,32 +116,10 @@ header {
 
 }
 			.appear {
-			float: right;
-			margin-right: 100px;
+			float: left;
+			margin: 25px 0;
 
-			&:hover {
-				-webkit-animation: slidedown .2s;
-			}
-		}
-
-		@include keyframes(slidedown) {
-			from {
-				margin-top: 0px;
-			}
-			25% {
-				margin-top: 5px;
-			}
-			50% {
-				margin-top: 0px;
-			}
-			75% {
-				margin-top: 5px;
-			}
-			to {
-				margin-top: 0px;
-			}
-		}
-
+}
 		@include keyframes(slideup) {
 			from {
 				margin-top: 5px;
@@ -475,22 +453,50 @@ aside.team-member {
 form {
 	margin-top: 15px;
 }
+
+.after {
+	display: block;
+	text-align: center;
+	font-size: 2.5em;
+	padding: 0 15px;
+}
+
 .mailform {
-	padding: 0 5% 1%;;
+	padding: 0 5% 1%;
+
 	span, label, h2 {
 		color: #00B9F3;
-		text-align: left !important;
 	}
-	span {
-		font-size: 3em;
+.f-name, .l-name, .address, .email, .city, .zip, .submit {
+	float: left;
+	display: block;
+	margin: 10px 50px;
+}
+
+.message, .job {
+	margin: 10px 50px;
+}
+.third {
+	width: 600px;
+	margin: 0 auto;
+}
+	.third.bottom  {
+		width: 600px;
 	}
 
+.submit{
+	margin: 0 auto;
+	display: block;
+	float: none;
+	width: 200px;
+}
 	label {
 		font-size: 24px;
 	}
 
 	input, textarea {
 		border-radius: 5px;
+		display: block;
 		margin-bottom: 15px;
 		font-size: 1.5em;
 	}
@@ -501,7 +507,8 @@ form {
 	}
 
 	select {
-		font-size: 2em
+		font-size: 2em;
+		display: block;
 	}
 
 	p:last-child {
@@ -510,8 +517,7 @@ form {
 
 	textarea {
 		height: 100px;
-		width: 400px;
-		margin-left: 15px;
+		width: 300px;
 		resize: none;
 		display: block;
 	}
@@ -526,15 +532,53 @@ form {
 		}
 	}
 
+
+	#req-field-desc {
+    font-style: italic;
+    margin-top: 15px;
+    color: #00B9F3;
+	}
+
+	 .required {
+	 	font-size: 2em;
+		font-weight: bold;
+		color: #F00 !important;
+	}
+
+	#errors {
+		display: none;
+
+		li {
+			list-style: none;
+
+			&:before {
+				content: '-';
+			}
+		}
+
+		#errors {
+			font-weight: bold;
+		} 
+	}
+
+	#success {
+		display: none;
+	}
+
+	#errors.visible, #success.visible {
+    display:block;    
+}
+
 	.send-button {
 		font-size: 2em;
 		color: #00b9f3;
-		background: white;
+		background: #dddddd;
 		font-family: 'Raleway';
 		padding: 10px;
-		margin-top: 15px;
+		margin: 15px auto;
 		border: none;
-		border-radius: 5px;
+		border-radius: 0;
+
 
 	}
 }

@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Let Us Spray Softwash</title>
-	<meta name="description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!">
+	<meta name="description" content="Have dirty streaks on your roof? Got green stuff on your house? Let Us Spray has got your fix right here! We get rid of roof stains, algae on siding, and much more!">
 	<meta property="og:title" content="Richmond's Premier Roof Cleaning Solution"/>
 	<meta property="og:image" content="http://letusspraysoftwash.com/images/logos/web/lg-transparent.jpg"/>
 	<meta property="og:image:type" content="image/jpeg" />
@@ -29,7 +29,7 @@
 	<script src="/js/modernizr.custom.38132.js"></script>
 	<script type="text/javascript" src="/js/html5shiv.js"></script>
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   $(window).load(function() {
     $('.flexslider').flexslider();
   });
@@ -112,7 +112,7 @@
 		<div class="ribbon-back-left-h"></div>
 		<div class="ribbon-back-right"></div>
 	</div>
-					<div class="welcome" class="accordion">
+					<div class="welcome accordion">
 						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="icon-side">
 							<span class="iconic house"></span>
@@ -124,7 +124,7 @@
 						
 							<div class="clear-fix"></div>
 					</div>
-					<div class="century21" class="accordion">
+					<div class="century21 accordion">
 						<h2 class="bg-header">SoftWashing - 21st Century Technology</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="text-side">
 							<p>Soft-washing is a cleaning process which utilizes ultra low pressure to deliver a customized cleaning solution, specially blended to meet the demands of each project. It differs from pressure washing in that the cleaning solution is applied and rinsed at extremely low pressure which will not harm or damage painted surfaces, vinyl siding, wood, nor contribute to granular loss of composite roof shingles.</p>
@@ -139,7 +139,7 @@
 						
 							<div class="clear-fix"></div>		
 					</div>
-					<div class="about" class="accordion">
+					<div class="about accordion">
 						<h2 class="bg-header" id="about">About Us</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
 							<script type="text/javascript"
@@ -161,7 +161,7 @@ google_ad_height = 240;
 						<div class="clear-fix"></div>		
 					
 					</div>
-					<div class="technology" class="accordion">
+					<div class="technology accordion">
 						<h2 class="bg-header" id="technology">The Unique Soft Wash System</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><p>Dark stains on your roof are caused primarily by a persistent type of algae, Gloeocapsa Magma. The SoftWash System gently removes the staining without harming the roof itself.  AND it kills the algae and other harmful organisms so the stains don't come back!</p>
 						<ol>
@@ -174,7 +174,7 @@ google_ad_height = 240;
 						</ol></div>
 						
 					</div>
-					<div class="FAQ" class="accordion">
+					<div class="FAQ accordion">
 						<h2 class="bg-header">FAQ's</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><span class="question">"What causes the black marks on my roof?"</span>
 						<p>Most roof stains are caused by the growth of algae, lichen colonies or moss that feed on organic matter frequently found on roof surfaces. The portions of a roof that receive the least amount of sunlight are more likely to have roof stains first. This explains why some homes may have roof stains only on one side of the roof, typically the northern and/or western exposure or in heavily shaded areas.</p>
@@ -190,7 +190,7 @@ google_ad_height = 240;
 						<p>If used improperly there can be some damage to vegetation. That is also why we like to ask all of our customers to water their plants heavily the night before and just after treatment.  In most cases you will not notice any damage to your plants.  In a very few cases there could be a light browning in a few areas that will go away quickly.</p></div>
 						
 					</div>
-					<div class="why" class="accordion"><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
+					<div class="why accordion"><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<h2 class="bg-header">Why should I have my roof cleaned?</h2>
 							<div><h1>top 10 reasons to have your roof cleaned</h1>
 							<ol>
@@ -221,11 +221,102 @@ google_ad_height = 240;
 					</div>
 				</section>
 				<div class="mailform">
-					<span id="after">Contact Us!</span>
-					<?php require_once('contact.php');?>
+					<span class="after">Contact Us!</span>
+<?php
+//init variables
+$cf = array();
+$sr = false;
+ 
+if(isset($_SESSION['cf_returndata'])){
+    $cf = $_SESSION['cf_returndata'];
+    $sr = true;
+}
+?>					
+<ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+	<li id="info">These were some of the problems with your submission:</li>
+    <?php 
+    if(isset($cf['errors']) && count($cf['errors']) > 0) :
+        foreach($cf['errors'] as $error) :
+    ?>
+    <li><?php echo $error ?></li>
+    <?php
+        endforeach;
+    endif;
+    ?>						
+</ul>
+<p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message!</p>
+<form action="/database.php" method="post" id="contact">
+	<div class="top third">
+		<div class="f-name">
+			<label>First Name: </label><span class="required">*</span>
+			<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['firstName'] : '' ?>"  name="firstName" placeholder="Johnny" required="required" autofocus="autofocus">
+		</div>
+		<div class="l-name">
+			<label>Last Name: </label><span class="required">*</span>
+			<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['lastName'] : '' ?>"  name="lastName" placeholder="Appleseed" required="required">
+		</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="middle third">
+		<div class="email">
+					<label>Email Address: </label><span class="required">*</span>
+					<input type="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" name="email" placeholder="johnny@email.com" required="required">
+		</div>
+		<div class="address">
+			<label>Street Address: </label><span class="required">*</span>				
+			<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['address'] : '' ?>"  name="address" placeholder="123 Applegrove Rd." required="required">
+		</div>
+		<div class="clear-fix"></div>
+	</div>
+	<div class="middle third">
+		<div class="city">
+			<label>City: </label><span class="required">*</span>
+			<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['city'] : '' ?>" name="city" placeholder="Appletown" required="required">
+		</div>			
+		<div class="zip">
+			<label>Zip Code: </label><span class="required">*</span>
+			<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['zip'] : '' ?>" name="zip_code" placeholder="12345" required="required">
+		</div>
 				<div class="clear-fix"></div>
+
+	</div>		
+		
+		<div class="bottom third">
+				<div class="job">
+					<label>What's Dirty? </label><span class="required">*</span>
+					<select name="job" id="selectme" required="required">
+						<option></option>
+						<option value="house" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['job'] == 'house') ? "selected='selected'" : ''?>>House</option>
+						<option value="roof" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['job'] == 'roof') ? "selected='selected'" : '' ?>>Roof</option>
+						<option value="garage-shed" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['garage-shed'] == 'garage-shed') ? "selected='selected'" : '' ?>>Garage/shed</option>
+						<option value="rust-removal" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['rust-removal'] == 'rust') ? "selected='selected'" : '' ?> >Rust-Removal</option>
+						<option value="other" <?php echo ($sr && !$cf['form_ok'] && $cf['posted_form_data']['job'] == 'other') ? "selected='selected'" : '' ?>>Other</option>
+					</select>
+				</div>
+				
+				
+				<div class="message">
+					<label>Message: </label><span class="required">*</span>
+					<textarea name="message" cols="80" rows="5" placeholder="Mark, Let me tell you about my filthy roof! I need help!" required="required"><?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['message'] : '' ?></textarea>				
+					<div class="appear">
+						<a href="http://facebook.com/letusspray" target="blank"><img src="/images/FB_FindUsOnFacebook-320.png" alt="Find Us On Facebook"></a>
+					</div>
+					<div class="clear-fix"></div>
+				</div>	
+				
+				
+				<div class="submit">
+						<input type="submit" id="submit" class="send-button" value="Submit">
+						<input type="email" name="email2" style="display: none;">
+				</div>
+					<p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+
+	</div>	
+<div class="clear-fix"></div>
+</form>
+<?php unset($_SESSION['cf_returndata']); ?>
 			</div>
-			<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy</p></footer>
+			<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy; </p></footer>
 		</div>
 	</div>	
 </div>

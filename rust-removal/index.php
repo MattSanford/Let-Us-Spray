@@ -96,12 +96,34 @@
 					</ul>
 					<p>Rust will become more difficult to treat and remove over time, which is why it is important to schedule a cleaning appointment sooner rather than later. In most cases we can perform rust removal on a small test spot, ensuring that you will be investing in the results you are expecting. <br> Call us today at <b>(804)-363-3686</b> to schedule your free consultation. You may also use our convenient <a href="#contact">contact form</a> to let us know how we can meet your cleaning needs.</p>
 					<div class="mailform rust-color">
-						<span id="after">Contact Us!</span>
-						<?php include('../contact_rust.php') ?>
-						<div class="clear-fix"></div>
+						<span class="after">Contact Us!</span>
+					<?php
+					//init variables
+					$cf = array();
+					$sr = false;
+					 
+					if(isset($_SESSION['cf_returndata'])){
+					    $cf = $_SESSION['cf_returndata'];
+					    $sr = true;
+					}
+					?>					
+					<ul id="errors" class="<?php echo ($sr && !$cf['form_ok']) ? 'visible' : ''; ?>">
+						<li id="info">These were some of the problems with your submission:</li>
+					    <?php 
+					    if(isset($cf['errors']) && count($cf['errors']) > 0) :
+					        foreach($cf['errors'] as $error) :
+					    ?>
+					    <li><?php echo $error ?></li>
+					    <?php
+					        endforeach;
+					    endif;
+					    ?>						
+					</ul>
+					<p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message!</p>
+					<?php require_once('../contact.php');?>
 					</div>
 			</div>
-						<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy</p></footer>
+<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy</p></footer>
 
 	<div class="clear-fix"></div>
 	</div>
