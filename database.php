@@ -1,5 +1,5 @@
+
 <?php
-require_once("hv.php");
 
 date_default_timezone_set('America/New_York');
 

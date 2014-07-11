@@ -49,7 +49,7 @@ p, li {
 	line-height: 35px;
 }
 
-li {
+.technology li {
 	margin: 10px 20px;
 }
 
@@ -91,7 +91,6 @@ header {
 				url('/images/grid.png');
 
 	height: 100px;
-	margin: 0 auto;
 	position: fixed;
 	top: 0px;
 	width: 100%;
@@ -99,7 +98,6 @@ header {
 
 	.header-in {
 		margin: 0 auto;
-		width: 980px;
 
 		img {
 			margin: 0 auto;
@@ -205,6 +203,11 @@ h2 {
 	margin-top: 100px;
 	padding-bottom: 15px;
 	width: 100%;
+
+	.f-wrap {
+		width: 960px;
+		margin: 0 auto;
+	}
 
 	&, .badges {
 	-moz-box-shadow:inset 0px 1px 6px #000000;
@@ -484,14 +487,9 @@ form {
 }
 
 .mailform {
-<<<<<<< HEAD
+
 	padding: 0 5% 1%;
 
-=======
-	.bg-header {
-		background: none;
-	}
->>>>>>> c5ffbca8e132d4afce1108e087b91e0aef617d77
 	span, label, h2 {
 		color: #00B9F3;
 	}
@@ -603,13 +601,10 @@ form {
 		background: #dddddd;
 		font-family: 'Raleway';
 		padding: 10px;
-<<<<<<< HEAD
 		margin: 15px auto;
-=======
-		margin: 15px 0 0 15px ;
->>>>>>> c5ffbca8e132d4afce1108e087b91e0aef617d77
 		border: none;
 		border-radius: 0;
+		text-align: center;
 
 
 	}
@@ -650,7 +645,6 @@ form {
 
 	}
 }
-
 
 
 @media all and (max-width: 960px) {
@@ -697,7 +691,7 @@ body {
 				}
 			}
 		}
-	}
+	
 	.appear {
 		display: none !important;
 	}
@@ -706,6 +700,10 @@ body {
 		.content-wrap {
 			width: 100%
 		}
+
+
+	section.f-wrap {
+		width: 760px;
 	}
 
 	.ribbon-wrapper-h {
@@ -733,7 +731,6 @@ body {
 
 		input, textarea {
 			border-radius: 5px;
-			font-size: 1.5em;
 		}
 		table {
 			td {
@@ -746,15 +743,54 @@ body {
 			font-size: 1.5em
 		}
 
-		p:last-child {
-			margin: 5px 0 0;
-		}
-
 		textarea {
-			height: 100px;
-			width: 98%;
+			height: 200px;
+			width: 800px;
 			resize: none;
 			display: block;
 		}
 }
+}
+}
+}
+@media only screen and (max-width : 480px) {
+
+
+	#main {
+
+
+		.bottom p {
+		padding: 0;
+		margin: 15px 0;
+		width: 275px;
+	}
+		
+
+	.f-wrap {
+		width: 300px;
+	}
+}
+		.mailform {
+	
+		 label, input, textarea, select{
+			margin: 0; 
+		} 
+			textarea {
+			height: 100px;
+			width: 200px !important;
+			resize: none;
+			display: block;
+		}
+		.submit {
+			margin: 0;
+			width: 300px;
+			text-align: center;
+		}
+
+}
+
+		.send-button {
+			margin: 30px auto !important;
+		}
+
 }

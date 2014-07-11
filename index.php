@@ -6,11 +6,10 @@
 <!--[if gt IE 8]><!--> 
 <html class="no-js"> <!--<![endif]-->
     <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Let Us Spray Softwash</title>
-	<meta name="description" content="Have dirty streaks on your roof? Got green stuff on your house? Let Us Spray has got your fix right here! We get rid of roof stains, algae on siding, and much more!">
+	<meta name="description" content="Have dirty streaks on your roof? Got green stuff on your house? Let Us Spray has got your fix right here! We get rid of roof stains, algae on siding, and much more in the greater Richmond area.">
 	<meta property="og:title" content="Richmond's Premier Roof Cleaning Solution"/>
 	<meta property="og:image" content="http://letusspraysoftwash.com/images/logos/web/lg-transparent.jpg"/>
 	<meta property="og:image:type" content="image/jpeg" />
@@ -18,7 +17,7 @@
 	<meta property="og:image:height" content="514" />
 	<meta property="og:url" content="http://letusspraysoftwash.com" />
 	<meta property="og:site_name" content="Let Us Spray Softwash"/>
-	<meta property="og:description" content="Have dirty streaks on your roof? Got green stuff on your house? We got your fix right here! We get rid of roof stains, algae on siding, and much more!"/>	
+	<meta property="og:description" content="Have dirty streaks on your roof? Got green stuff on your house? Let Us Spray has got your fix right here! We get rid of roof stains, algae on siding, and much more!"/>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'>
 	<link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css">
@@ -32,7 +31,9 @@
 
 <script type="text/javascript">
   $(window).load(function() {
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({
+    	animation: "slide"
+    });
   });
 </script>
   <script type="text/javascript">
@@ -58,7 +59,7 @@
 			</div>
 		</header>
 		<div id="main">
-			<section>
+			<section class="f-wrap">
 				<div class="flexslider">
 					<ul class="slides">
 					    <li>
@@ -114,7 +115,6 @@
 		<div class="ribbon-back-right"></div>
 	</div>
 					<div class="welcome accordion">
-
 						<h1 class="bg-header">Your Non-Pressure Roof Cleaning Specialists</h1><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
 						<div><div class="icon-side">
 							<span class="iconic house"></span>
@@ -143,17 +143,16 @@
 					</div>
 					<div class="about accordion">
 						<h2 class="bg-header" id="about">About Us</h2><span class="iconic arrow-d"></span><span class="iconic arrow-up"></span>
-						<div><p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p>
-							<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script><script type="text/javascript"><!--
-google_ad_client = "ca-pub-4516501803385461";	
-/* test */
-google_ad_slot = "7618200230";
-google_ad_width = 120;
-google_ad_height = 240;
-//-->
-</script><p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-4516501803385461"
+     data-ad-slot="3399902631"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+						<div><p>Established in 2004, Let Us Spray SoftWash is a Christian, family owned and operated business conveniently located in Henrico, VA.</p><p>As the leading provider of non-pressure/soft wash exterior cleaning, we offer full service exterior cleaning for the entire Richmond Metro area and surrounding counties. </p>
 						<p>We follow all industry accepted non-pressure/soft washing standards and recommended procedures by SoftWash Systems, ARMA (Asphalt Roof Manufacturers Association), and RCIA (Roof Cleaning Institute of America). Our specially blended cleaning solutions are biodegradable and exclusive to SoftWash Systems.</p>
 						<div class="icon-side bb">
 							<a href="http://www.bbb.org/richmond/business-reviews/roof-cleaning-and-stain-removal/let-us-spray-powerwashing-in-richmond-va-21017473"><div id="bb-wrap"></div></a>
@@ -247,7 +246,7 @@ if(isset($_SESSION['cf_returndata'])){
     ?>						
 </ul>
 <p id="success" class="<?php echo ($sr && $cf['form_ok']) ? 'visible' : ''; ?>">Thanks for your message!</p>
-<form action="/database.php" method="post" id="contact">
+<form action="database.php" method="post" id="contact">
 	<div class="top third">
 		<div class="f-name">
 			<label>First Name: </label><span class="required">*</span>
@@ -262,7 +261,7 @@ if(isset($_SESSION['cf_returndata'])){
 	<div class="middle third">
 		<div class="email">
 					<label>Email Address: </label><span class="required">*</span>
-					<input type="email" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" name="email" placeholder="johnny@email.com" required="required">
+					<input type="text" value="<?php echo ($sr && !$cf['form_ok']) ? $cf['posted_form_data']['email'] : '' ?>" name="email" placeholder="johnny@email.com" required="required">
 		</div>
 		<div class="address">
 			<label>Street Address: </label><span class="required">*</span>				
@@ -318,7 +317,7 @@ if(isset($_SESSION['cf_returndata'])){
 </form>
 <?php unset($_SESSION['cf_returndata']); ?>
 			</div>
-			<footer class="foot"><p>All rights reserved. Let Us Spray Softwash &copy; </p></footer>
+			<footer class="foot"><p>All rights reserved. <br> Let Us Spray Softwash &copy; </p></footer>
 		</div>
 	</div>	
 </div>
